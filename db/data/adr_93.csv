@@ -1,0 +1,94 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+31,ADR Contents,,Below are the ADR specific reqs (Appendix A will be located after next N/A in checklist),,
+32,2,Function,The function of this vehicle standard is to ensure the driver has an adequate field of view to either side and in all directions in front of the vehicle.,,
+1,5.1,Adequate View of traffic,"A vehicle must not be so constructed or equipped, nor must anything be affixed thereto in such a manner as to prevent the driver from having an adequate view of traffic on either side of the vehicle and in all directions in front of the vehicle, to enable the vehicle to be driven with safety.",Electric Windows,Inspection
+2,5.2,Seating Reference Point of Passenger vs Driver,The ‘Seating Reference Point’ of a passenger seating position must not be any more than 100 mm in front of the ‘Seating Reference Point’ of the driver’s seating position.,SRP8-032,Analysis
+3,5.3,No seating on RHS of driver,A vehicle must not include any seating for a passenger at the right hand side of the driver.,SRP8-032,Inspection
+4,5.4,ADR Compliance Conditions,"Category MA, MB and MC vehicles, which meet the requirements of Appendix A as varied by Section 6 Exemptions and Alternative Procedures, will be deemed to comply with this rule.",,N/A
+6,5.1.1,Transparent area of windscreeen,"The transparent area of the windscreen shall include at least the windscreen datum points (see Annex 4, Appendix, Figure 1):",SRP8-003,Analysis
+7,5.1.1.1,Horizontal datum point,"5.1.1.1 A horizontal datum point forward of V1 and 17° to the left (see Annex 4, Appendix, Figure 1);",SRP8-065,Analysis
+8,5.1.1.2,Upper vertical datum point,5.1.1.2 An upper vertical datum point forward of V1 and 7° above the horizontal;,SRP8-065,Analysis
+9,5.1.1.3,Lower vertical datum point,5.1.1.3. A lower vertical datum point forward of V2 and 5° below the horizontal;,SRP8-065,Analysis
+10,5.1.1.4,Forward-vision compliance (opposite half of windscreen),"To verify compliance with the forward-vision requirement on the opposite half of the windscreen, three additional datum points, symmetrical to the points defined in paragraphs 5.1.1.1. to 5.1.1.3. above in relation to the median longitudinal plane of the vehicle, are obtained.",SRP8-065,Analysis
+33,,Pillar Definition,"""A pillar"" means any roof support forward of the vertical transverse plane
+located 68 mm in front of the V points and includes non-transparent items
+such as windscreen mouldings and door frames, attached or contiguous to
+such a support.",SRP8-001,N/A
+34,,Pillar Definition,"""A pillar"" means any roof support forward of the vertical transverse plane
+located 68 mm in front of the V points and includes non-transparent items
+such as windscreen mouldings and door frames, attached or contiguous to
+such a support.",SRP8-003,N/A
+35,,Pillar Definition,"""A pillar"" means any roof support forward of the vertical transverse plane
+located 68 mm in front of the V points and includes non-transparent items
+such as windscreen mouldings and door frames, attached or contiguous to
+such a support.",SRP8-065,N/A
+11,5.1.2,Specify if two pillars aren’t symmetrical,"The angle of obstruction for each ""A"" pillar, as described in paragraph 5.1.2.1. below, shall not exceed 6° (see Annex 4, Appendix, Figure 3). In the case of armoured vehicles, that angle shall not exceed 10°.
+The angle of obstruction of the ""A"" pillar on the passenger side, as defined in paragraph 5.1.2.1.2. below, need not be determined if the two pillars are located symmetrically in relation to the median longitudinal vertical plane of the vehicle.",SRP8-001,Analysis
+12,5.1.2,Specify if two pillars aren’t symmetrical,"The angle of obstruction for each ""A"" pillar, as described in paragraph 5.1.2.1. below, shall not exceed 6° (see Annex 4, Appendix, Figure 3). In the case of armoured vehicles, that angle shall not exceed 10°.
+The angle of obstruction of the ""A"" pillar on the passenger side, as defined in paragraph 5.1.2.1.2. below, need not be determined if the two pillars are located symmetrically in relation to the median longitudinal vertical plane of the vehicle.",SRP8-065,Analysis
+13,5.1.2.1,Provide angle of obstruction values (conditional on the fact that the two pillars aren’t symmetrical),"The angle of obstruction of each ""A"" pillar shall be measured by superimposing in a plane the following two horizontal sections:
+Section 1: Starting from the Pm point situated at the location defined in paragraph 5.3.1.1. below, draw a plane forming an angle of 2° upwards in relation to the horizontal plane passing forward through Pm. Determine the horizontal section of the ""A"" pillar starting from the foremost point of the intersection of the ""A"" pillar and the inclined plane (see Annex 4, Appendix, Figure 2).
+Section 2: Repeat the same procedure, taking a plane declining at an angle of 5° downwards in relation to the horizontal plane passing forward through Pm (see Annex 4, Appendix, Figure 2).
+5.1.2.1.1. The angle of obstruction of the ""A"" pillar on the driver's side is the angle formed on the plane view by a parallel, starting from E2, to the tangent joining E1 with the outer edge of section S2 and the tangent joining E2 to the inner edge of section S1 (see Annex 4, Appendix, Figure 3).
+5.1.2.1.2. The angle of obstruction of the ""A"" pillar on the passenger side is the angle formed on the plane view by the tangent joining E3 to the inner edge of section S1 and a parallel, starting from E3, to the tangent joining E4 to the outer edge of section S2 (see Annex 4, Appendix, Figure 3).",SRP8-001,ADR Testing Procedure
+14,5.1.2.1,Provide angle of obstruction values (conditional on the fact that the two pillars aren’t symmetrical),"The angle of obstruction of each ""A"" pillar shall be measured by superimposing in a plane the following two horizontal sections:
+Section 1: Starting from the Pm point situated at the location defined in paragraph 5.3.1.1. below, draw a plane forming an angle of 2° upwards in relation to the horizontal plane passing forward through Pm. Determine the horizontal section of the ""A"" pillar starting from the foremost point of the intersection of the ""A"" pillar and the inclined plane (see Annex 4, Appendix, Figure 2).
+Section 2: Repeat the same procedure, taking a plane declining at an angle of 5° downwards in relation to the horizontal plane passing forward through Pm (see Annex 4, Appendix, Figure 2).
+5.1.2.1.1. The angle of obstruction of the ""A"" pillar on the driver's side is the angle formed on the plane view by a parallel, starting from E2, to the tangent joining E1 with the outer edge of section S2 and the tangent joining E2 to the inner edge of section S1 (see Annex 4, Appendix, Figure 3).
+5.1.2.1.2. The angle of obstruction of the ""A"" pillar on the passenger side is the angle formed on the plane view by the tangent joining E3 to the inner edge of section S1 and a parallel, starting from E3, to the tangent joining E4 to the outer edge of section S2 (see Annex 4, Appendix, Figure 3).",SRP8-065,ADR Testing Procedure
+15,5.1.2.2,"""A"" Pillar Limit","No vehicle shall have more than two ""A"" pillars.",SRP8-065,Inspection
+16,5.1.3,No Obstruction Conditions,"Except as provided in paragraph 5.1.3.3. or 5.1.3.4. below, other than the obstructions created by the ""A"" pillars, the fixed or movable vent or side window division bars, outside radio aerials, devices for indirect vision, covering the mandatory field of indirect vision, and windscreen wipers, there shall be no obstruction in the driver's 180° forward direct field of vision below a horizontal plane passing through V1, and above three planes through V2, one being perpendicular to the plane X Z and declining forward 4° below the horizontal, and the other two being perpendicular to the plane Y Z and declining 4° below the horizontal (see Annex 4, Appendix, Figure 4).",SRP8-065,Analysis
+36,5.1.3,Objects that are not considered Obstructions,"The following are not considered to be obstructions to the field of vision:
+(a) Embedded or printed ""radio aerial"" conductors, no wider than the following:
+(i) Embedded conductors: 0.5 mm,
+(ii) Printed conductors: 1.0 mm. These ""radio aerial"" conductors shall not cross zone A . However, three ""radio aerial"" conductors may cross zone A if their width does not exceed 0.5 mm.
+(b) Within zone A located ""defrosting/demisting"" normally in ""zigzag"" or sinusoidal form having the following dimensions:
+(i) Maximum visible width: 0.030 mm,
+(ii) Maximum conductor density:
+a. If the conductors are vertical: 8/cm,
+b. If the conductors are horizontal: 5/cm.",,N/A
+37,5.1.3.1,Camera Monitor Devices Exemption,"In case of camera monitor devices, the exemptions of paragraph 5.1.3. apply to cameras including their holders and housings which are mounted to the vehicle exterior. The camera-monitor system replacing a rear-view Class I mirror shall have the same exemption.",,N/A
+17,5.1.3.3,Obstruction (Steering Wheel rim & Instrument Panel),"An obstruction created by the steering-wheel rim and the instrument panel inside the steering wheel will be tolerated if a plane through V2, perpendicular to the plane x - z and tangential to the highest part of the steering-wheel rim, is declined at least 1° below the horizontal.
+The steering wheel, if adjustable, shall be placed in the normal position indicated by the manufacturer or, failing that, midway between the limits of its range(s) of adjustment.",SRP8-022,Analysis
+18,5.1.3.4,Obstruction (Conical Projection),"An obstruction between a plane through V2, and declined at least 1° below the horizontal and a plane through V2 and declined 4° below the horizontal will be tolerated if the conical projection of this obstruction, starting from V2, on an area ""S"" as defined in paragraph 5.1.3.2.1. below does not exceed 20 per cent of this area. The steering wheel, if adjustable, shall be placed in the normal position indicated by the manufacturer or, failing that, midway between the limits of its range(s) of adjustment.",SRP8-065,Analysis
+19,5.1.3.4.1,Provide S area here,"The area ""S"" (see Annex 4, Appendix, Figure 7) is a rectangular vertical area located in a plane perpendicular to the X coordinate 1,500 mm forward of the point V2. The upper edge of the area ""S"" is defined by a plane passing through V2 declined forward 1° below the horizontal. The lower edge of the area ""S"" is defined by a plane passing through V2 declined forward 4° below the horizontal. The left and right edges of the area ""S"" are vertical and generated from the intersection lines of the three planes declined 4° as defined in paragraph 5.1.2.2. above.",SRP8-065,N/A
+20,5.1.3.4.2,"If windscreen is >1500mm in front of point V2, provide proof if distance has been extended.","In the case of a windscreen extending beyond 1,500 mm forward of the point V2, the distance between the area ""S"" and the point V2 may be extended accordingly.",SRP8-003,Analysis
+21,5.1.4 Pt 1,"Visibility Test 1 (Given height of V2 above the ground exceeds 1,650 mm)","In the case where the height of V2 above the ground exceeds 1,650 mm, the following requirement shall be met:
+A 1,200 mm tall cylindrical object with a diameter of 300 mm that is situated inside the space bounded by a vertical plane located 2,000 mm in front of the vehicle, a vertical plane located 2,300 mm in front of the vehicle, a vertical plane located 400 mm from the driver's side of the vehicle, and a vertical plane located 600 mm from the opposite side of the vehicle shall be at least partially visible when viewed directly from V2 (see Figure 1), regardless of where the object is within that space, unless it is invisible due to a blind spot(s) created by the A pillars, windscreen wipers, or steering wheel.",SRP8-065,if V2 <= 1650 N/A else Analysis
+22,5.1.4 Pt 2,"Visibility Test 2 (Given height of V2 above the ground exceeds 1,650 mm)","In the case where the height of V2 above the ground exceeds 1,650 mm, the following requirement shall be met: If the driver's seat is located in the central driving position of the vehicle, the 1,200 mm tall cylindrical object shall be situated inside the space bounded by a vertical plane located 2,000 mm in front of the vehicle, a vertical plane located 2,300 mm in front of the vehicle, a vertical plane located 500 mm from the side of the vehicle (see Figure 2).",SRP8-065,As Above
+23,5.2,Provide the Position of the V points here (V point determination below),,SRP8-065,ADR Annex
+38,5.2.1,,"The position of the V points in relation to the ""R"" point, as indicated by XYZ coordinates from the three dimensional reference grid, are as shown in Tables I and IV.",,
+39,5.2.2,,"Table I indicates the basic coordinates for a design seat-back angle of 25°. The positive direction for the coordinates is indicated in Annex 4, Appendix, Figure 1.
+Table I
+V-point X Y Z
+V1 68 mm -5 mm 665 mm
+V2 68 mm -5 mm 589 mm",,
+22,5.3,Provide the Position of the P points here (P point determination below),,SRP8-065,ADR Annex + Analysis
+40,5.3.1,,"The position of the P points in relation to the ""R"" point, as indicated by the XYZ coordinates from the three-dimensional reference grid, are as shown by Tables II, III and IV.",SRP8-065,ADR Annex + Analysis
+41,5.3.1.1,,"Table II sets out the base coordinates for a design seat-back angle of 25°. The positive direction of the coordinates is set out in Annex 4, Appendix, Figure 1.
+The Pm point is the point of intersection between the straight line joining P1, P2 and the longitudinal vertical plane passing through the ""R"" point.
+Table II
+Point P X Y Z
+P1 35 mm -20 mm 627 mm
+P2 63 mm 47 mm 627 mm
+Pm 43.36 mm 0 mm 627 mm",,ADR Annex + Analysis
+42,5.3.1.2,,"Table III indicates the further corrections to be made to the X coordinates of P1 and P2 when the horizontal seat-adjustment range as defined in paragraph 2.16. above exceeds 108 mm. The positive direction for the coordinates is indicated in Annex 4, Appendix, Figure 1.
+Table III
+Horizontal seat-adjustment range Δx
+108 to 120 mm -13 mm
+121 to 132 mm -22 mm
+133 to 145 mm -32 mm
+146 to 158 mm -42 mm
+more than 158 mm -48 mm",,Adr annex
+43,5.4,Correction for design seat-back angles other than 25°,"Table IV indicates the further corrections to be made to the X and Z coordinates of each P point and each V point when the design seat-back angle is not 25°. The positive direction for the coordinates is indicated in Annex 4, Appendix, Figure 1.",,ADR annex
+23,5.5,Provide the Position of the E points here (E point determination below),,SRP8-065,ADR Annex
+44,5.5.1,,"E1 and E2 points are each 104 mm from P1.
+E2 is 65 mm from E1 (see Annex 4, Appendix, Figure 4).",,N/A
+45,5.5.2,,"The straight line joining E1 and E2 is rotated about P1 until the tangent joining E1 to the outer edge of Section 2 of the ""A"" pillar on the driver's side is normal to the straight line E1 - E2 (see Annex 4, Appendix, Figure 3).",,N/A
+46,5.5.3,,"E3 and E4 are each 104 mm from point P2. E3 is 65 mm from E4 (see Annex 4, Appendix, Figure 4).",,N/A
+47,5.5.4,,"The straight line E3 - E4 is rotated about P2 until the tangent joining E4 to the outer edge of Section 2 of the ""A"" pillar on the passenger's side is normal to the straight line E3 - E4 (see Annex 4, Appendix, Figure 3).",,N/A
+24,6.1.1,Dimensional Relationships,The dimensional relationships between the vehicle's primary reference marks and the three - dimensional reference grid shall be determined by the procedure prescribed in Annex 4.,,ADR Testing Procedure
+25,6.1.2,Windscreen Datum Points Determination,"The position of the points V1 and V2 is determined in relation to the ""R"" point as indicated by the XYZ coordinates of the three dimensional reference grid and are shown in Table I under paragraph 5.2.2. above and Table IV under paragraph 5.4. above. The windscreen datum points shall then be found from the corrected V points as prescribed in paragraph 5.1.1. above.",,ADR Testing Procedure
+26,6.1.3,Relationships using Table II and Table III,"The relationship between the P points, the ""R"" point, and the centre line of the driver's seating position, as indicated by XYZ coordinates from the three dimensional reference grid, shall be determined from Tables II and III in paragraph 5.3. above. The correction for design seat back angles other than 25° is shown in Table IV under paragraph 5.4. above.",,ADR Testing Procedure
+27,6.1.4,Angle of obstruction Determination,"The angle of obstruction (see paragraph 5.1.2. above) shall be measured in the inclined planes, as indicated in Annex 4, Appendix, Figure 2. The relationship between P1 and P2, which are connected to E1 and E2 and E3 and E4 respectively, is shown in Annex 4, Appendix, Figure 5.",,ADR Testing Procedure
+30,6.1.5,Angle of obstruction Measurement Method (Let's try suggest drawings),"The manufacturer may measure the angle of obstruction either on the vehicle or in the drawings. In the event of doubt, the Technical Services may require the tests be carried out on the vehicle.",,N/A

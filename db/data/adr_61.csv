@@ -1,0 +1,22 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,5.1,VIN,"5.1. Every vehicle must have a unique ‘Vehicle Identification Number (VIN)’ that meets the requirements of:
+(a) ISO 3779:2009 (Road Vehicles – Vehicle identification number (VIN) – Content and structure); and
+(b) ISO 3780:2009 (Road Vehicles – World manufacturer identifier (WMI) code); and
+(c) ISO 4030:1983 (Road Vehicles – Vehicle identification number (VIN) – Location and attachment), except that:
+(i) it is permissible to locate the ‘VIN’ on the left-hand side of the vehicle; and
+(ii) clause 4.2 of ISO 4030:1983 is not applicable in Australia.",SRP8-172,Inspection
+2,6.1,Durable Self-adhesive Label,"6.1. Every L-Group vehicle, and every category MA, MB, MC, MD or NA vehicle, must bear one or more items of ‘Secure Vehicle Identification Marking’, in the form of a durable self-adhesive label.",SRP8-172,Inspection
+3,6.4,Secure Vehicle Identification Marking,"6.4. The ‘Secure Vehicle Identification Marking’ required by clause 6.1, 6.2 and 6.3 above, must:
+(a) display at least:
+(i) the name of the ‘Manufacturer’ or the ‘Vehicle Make’; and
+(ii) the ‘VIN’;
+(b) be firmly affixed in a conspicuous and readily accessible position on the vehicle; and
+(c) not be affixed on a part of the vehicle usually subject to replacement in use.",SRP8-172,Inspection
+4,6.4.1,Type of Letter,"6.4.1. All information required by part (a) of clause 6.4 above on the ‘Secure Vehicle Identification Marking’, must be in Latin alphabet letters, Arabic numerals, or a combination of these (as applicable/required), all at least 2.5 mm in height.",SRP8-172,Inspection
+5,6.4.2,Provision of manufacturer's statutory plate,"6.4.2. A category M, N or T vehicle shall be deemed to satisfy the requirements of parts (b) and (c) of clause 6.4 above, if the required ‘Secure Vehicle Identification Marking’ is provided through a manufacturer’s statutory plate located in accordance with a type approval granted under the Commission Regulation (EU) No 19/2011 for the vehicle type.",SRP8-172,Inspection
+6,6.4.3,Reliability of label,"6.4.3. Where a self-adhesive label is used for the required ‘Secure Vehicle Identification Marking’, it must be tamper evident, fraud resistant, and self-destructive (e.g. self-voiding) in case there is an attempt to remove the label; and all the required information must be printed indelibly on the label.",SRP8-172,Inspection
+7,6.4.5,Further Information,"6.4.5. The ‘Manufacturer’ may choose to provide further information, for example a ‘VIN’ barcode, on a self-adhesive label or metal plate used as ‘Secure Vehicle Identification Marking’.",SRP8-172,Inspection
+8,6.4.6,Vehicle Make,"6.4.6. The ‘Vehicle Make’ referred to in part (a) of clause 6.4 above may be included on its own, or as a part of a trading name or business name associated with the ‘Manufacturer’, including for example the name of the production facility.",SRP8-172,Inspection
+9,9.1.1,Registration Plate Height (Rear),"9.1.1. Provision must be made for mounting a registration plate as shown in Figure 1 below, to be affixed to the rear of the vehicle so that no part of such a plate is more than 1,300 mm from the ground.",SRP8-172,Inspection
+10,9.1.2,Registration Plate Height (Rear),"9.1.2. Provision must be made for mounting a registration plate as shown in Figure 1 below, to be affixed to the front of the motor vehicle forward of and parallel to the front ‘Axle’, so that no part of such a plate is more than 1,300 mm from the ground.",SRP8-172,Inspection
+11,9.1.3,Obscure,"9.1.3. No part of a vehicle, including its standard equipment, regular production options or ‘Equipment’ shall be so located as to obscure any part of the registration plate(s).",SRP8-172,Inspection

@@ -1,0 +1,22 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,2,Rear Plate Illumination Compatibility,"It shall specify whether the device is intended to illuminate a wide plate (520 x 120 mm), tall plate (340 x 240 mm), plate for agricultural or forestry tractors (240 x 165 mm), or any combination of those plates.",SRP8-171,Inspection
+2,3,Regulatory Marking and Certification,"Illuminating devices submitted for approval must bear:
+(a) the trade name or mark of the maker or manufacturer of the illuminating device;
+(b) a space of sufficient size for the approval mark; this space shall be shown in the drawings mentioned in paragraph 2(a) above.
+(c) In the case of lamps with non-replaceable light sources the making of rated voltage and rated wattage.",SRP8-171,Annex 1
+3,5,Photometric and Power Requirements for Rear Registration Plate Illuminating Devices,"5.1. Each sample shall conform to the lighting specifications set forth in paragraph 9 below2/.
+Illuminating devices must be so designed that the entire surface to be illuminated is visible from the rear within the field of vision indicated in the drawing in Annex 4.
+5.2. All measurements shall be carried out by adjusting the lamp or lamps of the illuminating device to the minimum light flux prescribed for the test voltage in the specification of the lamp or lamps for the device.
+5.2.1. All measurements on lamps equipped with non-replaceable light sources (filament lamps and other) shall be made at 6.75 V, 13.5 V or 28.0 V respectively.
+In the case of light sources supplied by a special power supply, the above test voltages shall be applied to the input terminals of that power supply. The test laboratory may require from the manufacturer the special power needed to supply the light sources.
+5.3. For any rear registration plate illuminating device, except those equipped with filament lamp(s), the luminance values measured after one minute and after 30 minutes of operation shall comply with the minimum requirements.
+The luminance distribution after one minute of operation can be calculated by applying at each test point the ratio of luminance values measured in one point after one minute and after 30 minutes of operation.",SRP8-011,Annex 3
+4,6,Light Colour Neutrality,The light of the lamp used in the illuminating device must be sufficiently colourless not to cause any appreciable change in the colour of the registration plate.,SRP8-171,Inspection
+5,7,Maximum Light Incidence Angle Compliance,"the device must be so placed that the angle of incidence of the light on the surface of the plate does not exceed 82 degrees at any point on the surface to be illuminated, this angle being measured from the extremity of the device's illuminating area which is furthest from the surface of the plate. If there is more than one illuminating device, the foregoing requirement shall apply only to that part of the plate intended to be illuminated by the device concerned. The device must be so designed that no light is emitted directly towards the rear, with the exception of red light if the device is combined or grouped with a rear lamp.",SRP8-171,Annex 4
+6,8,Photometric Test Procedure Compliance,"Luminance measurements shall be made on a piece of clean white blotting paper with a minimum diffuse reflection factor of 70%, of the same dimensions as the registration plate, placed in the position normally occupied by it and 2 mm in front of its holder. Luminance measurements shall be made perpendicularly to the surface of the paper, at the points shown in Annex 3 according to the type of plate for which the device is intended, each point representing a circular area 25 mm in diameter.",SRP8-011,Annex 3
+7,9,Minimum Luminance and Uniformity Compliance,"At each of the points of measurement shown in Annex 3, the luminance B shall be at least equal to 2.5 cd/m2.
+The gradient of the luminance between the values B1 and B2, measured at any two points 1 and 2 selected from among those mentioned above, shall not exceed 2 x Bo/cm, Bo being the minimum luminance measured at the various points, that is to say: ≤",SRP8-011,Annex 3
+8,Annex 6 1.2,Mass Production Quality Assurance,"when all measurements are made at 6.75 V, 13.5 V or 28.0 V respectively:
+no measured value deviates unfavourably by more than 20% from the values prescribed in this Regulation.
+With respect to the gradient of luminance the unfavourable deviation may be: 2.5 x Bo/cm comparable to 20%
+3.0 x Bo/cm comparable to 30%",SRP8-011,Annex 6

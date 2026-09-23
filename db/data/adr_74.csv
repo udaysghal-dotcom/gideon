@@ -1,0 +1,32 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,5.1.2.1. - 5.1.2.3.1.,"Indicator Colour, Intensity, and Angular Visibility Specifications","Colour of light emitted Amber/red - see Figure 1.
+Intensity of light emitted
+Minimum: 0.3 cd within the angles of light distribution of clause 5.1.2.3.
+Maximum: 12 cd in any direction. However, for ‘Side Marker Lamps’ combined with front position (side) lamps, luminous intensity of 60 cd shall be permitted within a forward angle from 45° inboard to 80° outboard.
+Angles of light distribution
+Vertical: from 10° above to 10° below the horizontal.",,
+2,5.1.2.5.2.1.1. - 5.1.2.5.2.1.2.2.,"Photometric, Voltage, and Luminous Flux Verification Procedure","During photometric measurements, stray reflections shall be avoided by appropriate masking. The distance of measurement shall be such that the law of the inverse of the square of the distance is applicable;
+The measuring equipment shall be such that the angular aperture of the receiver viewed from the reference centre of the light is comprised between 10’ and one degree;",,
+3,"4.2., 4.3., 4.5.",Device Approval and Identification Marking,"Must bear the trade name or mark of the applicant; this marking must be clearly legible and indelible. (a) The category or categories of light source(s) prescribed and/or
+(b) The light source module specific identification code.
+In the case of lamps with non-replaceable light sources or light source module(s), shall bear the marking of rated voltage or the range of voltages, and the rated wattage.",,
+4,6.3.1. - 6.3.3.,Low-Level Circuit Voltage and Gear Interface Specification,"The design of the light source module(s) shall be such as:
+(a) That each light source module can only be fitted in no other position than the designated and correct one and can only be removed with the use of tool(s);
+(b) If there are more than one light source module used in the housing for a device, light source modules having different characteristics can not be interchanged within the same lamp housing.
+The light source module(s) shall be tamperproof.
+A light source module shall be so designed that regardless of the use of tool(s), it shall not be mechanically interchangeable with any replaceable approved light source.",,
+5,9.1,Auxiliary Power Voltage Compliance,"(a) In the case of filament lamps, that is necessary to produce the reference luminous flux required for that category of filament lamp;
+(b) In the case of LED light sources of 6.75 V or 13.5 V; the luminous flux value produced shall be corrected. The correction factor is the ratio between the objective luminous flux and the mean value of the luminous flux found at the voltage applied;
+(c) In the case of lamps with non-replaceable light sources: 6.75 V and
+13.5 V respectively;
+(d) In the case of a system that uses an electronic light source control gear being part of the lamp3 applying at the input terminals of the lamp the voltage declared by the manufacturer or, if not indicated, 6.75 V, 13.5 V or 28.0 V, respectively;
+(e) In the case of a system that uses an electronic light source control gear not being part of the lamp, the voltage declared by the manufacturer shall be applied to the input terminals of the lamp.",,
+6,Annex 1,Reduced Vertical Light Distribution Requirement for Low-Mounted Lamps,The angle of 10° below the horizontal may be reduced to 5° in case of lamps intended to be installed with their H plane at a mounting height less than 750 mm above the ground.,,
+7,Annex 4 2.1.1. - 2.2.2.,Photometric Measurement and Intensity Requirements for SM1 and SM2 Side-Marker Lamps,"Minimum values:
+0.6 cd at any point other than the reference axis, at which it shall be 4.0 cd.
+Maximum values:
+25.0 cd at any point
+Minimum values:
+0.6 cd, at any point
+Maximum values:
+25.0 cd, at any point",,

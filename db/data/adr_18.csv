@@ -1,0 +1,16 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,5.1,Speedometer Display,The display of the speedometer must be located within the direct field of view of the driver and must be clearly legible both day and night. The range of speeds displayed must be sufficiently wide to include the maximum speed of this type of vehicle as stated by the manufacturer.,SRP8-029,Inspection
+2,5.1.1,Speedometer Intervals,"In the case of speedometers intended for vehicles of categories M, the graduation shall be 1, 2, 5 or 10 km/h. The numerical values of the speed shall be indicated on the display as follows: when the highest value on the display does not exceed 200 km/h, speed values shall be indicated at intervals not exceeding 20 km/h. When the maximum value on the display exceeds 200 km/h, then the speed values shall be indicated at intervals not exceeding 30 km/h. The indicated numerical speed value intervals need not be uniform.",SRP8-029,Inspection
+3,5.2,Testing Day,The accuracy of the speedometer equipment shall be tested in accordance with the following procedure:,SRP8-029,Test
+4,5.2.1,,The tyres shall be one of the types normally fitted to the vehicle as defined in paragraph 2.3. of this Regulation. A test shall be carried out for each type of speedometer intended to be fitted by the manufacturer.,,Test
+5,5.2.2,,"The test shall be carried out with the vehicle at its unladen weight. An additional weight can be carried for purposes of measurement. The weight of the vehicle and its distribution between the axles shall be indicated in the approval communication (see annex 1, paragraph 6.);",,Test
+6,5.2.3,,The reference temperature at the speedometer shall be 23 ± 5 °C;,,Test
+7,5.2.4,,During each test the pressure of the tyres shall be the normal running pressure as defined in paragraph 2.4..,,Test
+8,5.2.5,,"The vehicle is tested at the following speeds:
+Maximum design speed (Vmax) and Test speed(V1)
+100 < Vmax < 150 -40 km/h, 80 km/h and 80 % Vmax
+150 < Vmax , 40 km/h, 80 km/h and 120 km/h",,Test
+9,5.2.6,,the test instrumentation used for measuring the true vehicle speed shall be accurate to ± 0.5 per cent;,,Test
+10,5.2.6.1,,"the surface of a test track when used shall be flat and dry, and provide sufficient adhesion;",,Test
+11,5.3,Speed Indicated vs True Speed,"The speed indicated shall not be less than the true speed of the vehicle. At the test speeds specified in paragraph 5.2.5. above, there shall be the following relationship between the speed displayed (V1 ) and the true speed (V2).
+In the case of vehicles of categories M and N: 0 ≤ (V1 – V2) ≤ 0.1 V2 + 6 km/h;",SRP8-029,Test

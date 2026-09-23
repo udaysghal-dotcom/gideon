@@ -1,0 +1,30 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+5,,ADR 23 Note (From Andy),"For the prelim and detailed design reports, the requirements below should be addressed by purchasing tires that are already ADR 23 compliant, but the requirements of this ADR still need to be satisfied (speed ratings, etc.). This should satisfy the entire ADR (in combination with ADR 95 - Installation of Tires)",,
+1,5.1,Appendix A compliance,"For vehicles fitted with passenger car tyres (otherwise known as Class C1 tyres; and designed primarily for vehicles of UN categories M1, N1, O1 and O2), the tyres fitted must comply with the requirements of:
+Appendix A, except as varied by Section 6 Exemptions and Alternative Procedures; or the alternative standard at clause 7.",SRP8-050,Pre-Compliant Wheels
+2,5.1,Appendix A compliance,"For vehicles fitted with passenger car tyres (otherwise known as Class C1 tyres; and designed primarily for vehicles of UN categories M1, N1, O1 and O2), the tyres fitted must comply with the requirements of:
+Appendix A, except as varied by Section 6 Exemptions and Alternative Procedures; or the alternative standard at clause 7.",SRP8-051,Pre-Compliant Wheels
+3,6.1,Specific Exemptions,"Subject to clause 6.2 below, compliance with the following parts, sections and annexes of Appendix A is not required for the purposes of this standard:
+Section 3 Markings
+Section 4 Application for approval
+Section 5 Approval
+Section 7 Modifications of the type of tyre and extension of approval
+Section 8 Conformity of production
+Section 9 Penalties for non-conformity of production
+Section 10 Production definitively discontinued
+Section 11 Transitional provisions
+Section 12 Names and addresses of Technical Services responsible for conducting approval tests, and of Administrative Departments",SRP8-050,Pre-Compliant Wheels
+3,6.1,Specific Exemptions,"Subject to clause 6.2 below, compliance with the following parts, sections and annexes of Appendix A is not required for the purposes of this standard:
+Section 3 Markings
+Section 4 Application for approval
+Section 5 Approval
+Section 7 Modifications of the type of tyre and extension of approval
+Section 8 Conformity of production
+Section 9 Penalties for non-conformity of production
+Section 10 Production definitively discontinued
+Section 11 Transitional provisions
+Section 12 Names and addresses of Technical Services responsible for conducting approval tests, and of Administrative Departments",SRP8-051,Pre-Compliant Wheels
+4,6.2,Minimum markings,"In the case of a tyre type for which the manufacturer has elected, as permitted by clause 6.1 above, not to meet the full requirements of Appendix A – Section 3 – Markings, each tyre must at least bear:
+(a) the markings referred to in paragraphs 3.1.1 to 3.1.11 of Appendix A, on both side walls in the case of symmetrical tyres or at least on the outer side wall in the case of asymmetrical tyres;
+(b) the date of manufacture in the form of a group of four digits, the first two showing the week and the last two the year of manufacture, on at least one side wall; and
+(c) where applicable, the marking referred to in paragraph 3.1.15 of Appendix A, on both side walls in the case of symmetrical tyres or at least on the outer side wall in the case of asymmetrical tyres.",SRP8-051,Pre-Compliant Wheels

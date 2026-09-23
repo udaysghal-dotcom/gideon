@@ -1,0 +1,22 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,5.2.1.3,Unrestricted movement of the wheel,"The space in which the wheel revolves shall be such as to allow unrestricted movement when using the maximum permissible size of tyres and rim widths, taking into account the minimum and maximum wheel off-sets, within the minimum and maximum suspension and steering constraints as declared by the vehicle manufacturer. This shall be verified by performing the checks with the largest and the widest tyres, taking into account the applicable dimensional tolerances (i.e. maximum envelope) related to the tyre size designation as specified in the relevant UN Regulation.",SRP8-050,Inspection
+2,5.2.1.3,Unrestricted movement of the wheel,"The space in which the wheel revolves shall be such as to allow unrestricted movement when using the maximum permissible size of tyres and rim widths, taking into account the minimum and maximum wheel off-sets, within the minimum and maximum suspension and steering constraints as declared by the vehicle manufacturer. This shall be verified by performing the checks with the largest and the widest tyres, taking into account the applicable dimensional tolerances (i.e. maximum envelope) related to the tyre size designation as specified in the relevant UN Regulation.",SRP8-051,Inspection
+12,5.2.1.4,Alternative Testing procedure,"The Technical Service and/or Type Approval Authorities may agree to an
+alternative test procedure (e.g. virtual testing) to verify that the requirements
+of paragraph 5.2.1.3. are met.",,
+3,5.2.2.1.1,Single formation load capacity,"In the case of a vehicle fitted with tyres of the same type in single formation:
+at least equal to half of the technically permissible maximum axle mass for
+the most heavily loaded axle, as declared by the manufacturer of the vehicle.",SRP8-050,documentation
+4,5.2.2.1.1,Single formation load capacity,"In the case of a vehicle fitted with tyres of the same type in single formation:
+at least equal to half of the technically permissible maximum axle mass for
+the most heavily loaded axle, as declared by the manufacturer of the vehicle.",SRP8-051,documentation
+5,5.2.3.1,Speed capacity,Every tyre with which the vehicle is normally fitted shall bear a speed category symbol.,SRP8-050,documentation
+6,5.2.3.1,Speed capacity,Every tyre with which the vehicle is normally fitted shall bear a speed category symbol.,SRP8-051,documentation
+7,5.2.5.1,Spare wheels and tyres,"In cases where a vehicle is provided with a standard spare unit, it shall be of the same size as the tyres actually fitted to the vehicle",,
+8,5.2.5.1,Spare wheels and tyres,"In cases where a vehicle is provided with a standard spare unit, it shall be of the same size as the tyres actually fitted to the vehicle",,
+9,5.2.5.2,Spare tyre regulations,"Every vehicle provided with a temporary-use spare unit or run flat tyres shall
+comply with the technical and transitional provisions of Regulation No. 64
+with respect to the requirements concerning the equipment of vehicles with
+temporary-use spare units and run flat tyres.",!!,
+10,5.2.2.2.1,Maximum load rating,"In the case of tyres of class C1, the ""maximum load rating"" as referred to in paragraph 2.34. of Regulation No. 30 is taken into account.",SRP8-050,documentation
+11,5.2.2.2.2,Maximum load rating,"In the case of tyres of class C1, the ""maximum load rating"" as referred to in paragraph 2.34. of Regulation No. 30 is taken into account.",SRP8-051,documentation
