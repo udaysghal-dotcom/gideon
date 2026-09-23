@@ -1,0 +1,8 @@
+services:
+  query:
+    image: neo4j:latest
+    env_file:
+      - .env
+    entrypoint: ["cypher-shell", "--format", "plain", "--non-interactive"]
+    volumes:
+      - ./queries:/queries:ro

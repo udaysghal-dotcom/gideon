@@ -1,0 +1,31 @@
+Checklist,Clause,Req Name,Details,Project ID,Relevant Project,Relevant Department,"Verification Method : Inspection, Demonstration, Test, Analysis (Simulations/Calculations), ADR Annex, ADR Testing Procedure, Pre-compliant"
+1,4.1,Reversing Lamp Compliance,"Reversing lamps fitted to vehicles in accordance with ADRs 13/…, 19/… or 67/… and required to comply with ADR 1/00 must comply with either:",SRP8-011,Tailights,Chassis and Bodywork,N/A
+2,4.2,Technical Requirements/Alternative Standards Compliance,(a) The technical requirements of Appendix A as varied by part 5. Exemptions and Alternative Procedures and part 6. Supplementary General Requirements; or (b) One of the alternative standards listed in part 7. Alternative Standards.,SRP8-011,Tailights,Chassis and Bodywork,N/A
+3,6.1,Photometric and Colorimetric Limits,"The requirements and procedures set out in Annexes 5 and 6 of Appendix A set out alternative limits for some of the photometric and colorimetric requirements in sections 5 and 6 of Appendix A. Notwithstanding the limits in sections 5 and 6, lamps within the tolerances set out in Annex 5 sampled in accordance with Annex 6 will be considered compliant.",SRP8-011,Tailights,Chassis and Bodywork,"Annex 5, Annex 6"
+4,7.1.1,Non-replacable light sources,"All measurements on lamps equipped with non-replaceable light sources (filament lamps and other) shall be made at 6.75 V, 13.5 V or 28.0 V respectively.",SRP8-011,Tailights,Chassis and Bodywork,N/A
+5,"Appendix A,  5.2",Functional Reliability,"Reversing lamps shall be so designed and constructed that in normal use, despite the vibration to which they may then be subjected, they continue to function satisfactorily and retain the characteristics prescribed by this Regulation.",SRP8-011,Tailights,Chassis and Bodywork,Annex 3
+6,"Appendix A, 6.1",Light Intensity Limits,The intensity of the light emitted by each of the two samples shall be not less than the minima and not greater than the maxima specified below and shall be measured in relation to the axis of reference in the directions shown below (expressed in degrees of angle with the axis of reference). ,SRP8-011,Tailights,Chassis and Bodywork,Annex 3
+7,"Appendix A, 6.2",Axis Intensity Minimum,The intensity along the axis of reference shall be not less than 80 candelas.,SRP8-011,Tailights,Chassis and Bodywork,Annex 3
+8,"Appendix A, 6.3",Directional Intensity Limits,"The intensity of the light emitted in all directions in which the light can be observed shall not exceed  
+- 300 candelas in directions in or above the horizontal plane; or  
+- 600 candelas in directions below the horizontal plane.",SRP8-011,Tailights,Chassis and Bodywork,Annex 3
+9,"Appendix A, 6.4",Other Directional Intensity,"In every other direction of measurement shown in annex 3 to this Regulation the luminous intensity shall be not less than the minima specified in that annex.  However, in the case where the reversing lamp is intended to be installed on a vehicle exclusively in a pair of devices, the photometric intensity may be verified only up to an angle of 30 degrees inwards where a photometric value of at least 25 cd shall be satisfied.  
+ 
+This condition shall be clearly explained in the application for approval and relating documents (see paragraph 2 of this Regulation).  
+ 
+Moreover, in the case where the type approval will be granted applying the condition above, a statement in paragraph 11 ""Comments"" of the communication form (see annex 1 to this Regulation), will inform that the device shall only be installed in a pair.",SRP8-011,Tailights,Chassis and Bodywork,Annex 3
+10,"Appendix A, 6.5",Multi-Source Intensity Compliance,"In the case of a single lamp containing more than one light source, the lamp shall comply with the minimum intensity required when any one light source has failed and when all light sources are illuminated the maximum intensities shall not be exceeded.",SRP8-011,Tailights,Chassis and Bodywork,Annex 3
+11,"Appedix A, 8.1", ,"The colour of the light emitted shall be white.  In case of doubt, the colour may be checked on the basis of the definition of the colour of white light given in annex 4 to this Regulation.",SRP8-011,Tailights,Chassis and Bodywork,Annex 4
+12,"Annex 3, 1.2.2",Angular Resolution Specification for Photometric Measurement Equipment,the measuring equipment shall be such that the angle subtended by the receiver from the reference centre of the light is between 10' and 1 degrees;,SRP8-011,Tailights,Chassis and Bodywork,Annex 3
+13,"Annex 3, 3.2",Filament Lamp Intensity Limits,"For replaceable filament lamps: when equipped with mass production filament lamps at 6.75 V, 13.5 V or 28.0 V the luminous intensity values produced shall lie between the maximum limit given in this Regulation and the minimum limit of this Regulation increased according to the permissible deviation of the luminous flux permitted for the type of filament lamp chosen, as stated in Regulation No. 37 for production filament lamps; alternatively a standard filament lamp may be used in turn, in each of the individual positions, operated at its reference flux, the individual measurements in each position being added together.",SRP8-011,Tailights,Chassis and Bodywork,Annex 3
+12,Annex 4,Checking colour of white light,"COLOUR OF WHITE LIGHT 
+(Trichromatic coordinates) 
+Limit towards blue	:	x > 0.310 
+yellow	:	x < 0.500 
+green	:	y < 0.150 + 0.640x 
+green	:	y < 0.440 
+purple	:	y > 0.050 + 0.750x 
+red	:	y > 0.382  
+
+For checking these colorimetric characteristics, a source of light at a colour temperature of 2,854 degrees K corresponding to illuminant A of the International Commission on Illumination (ICI) shall be used.   However, for lamps equipped with non-replaceable light sources (filament lamps and other), the colorimetric characteristics should be verified with the light sources present in the lamp, in accordance with paragraph 7.1.1. of this Regulation.",SRP8-011,Tailights,Chassis and Bodywork,Annex 4
+13,Annex 5 + 6,Reqs for conformity + inspector sampling,Please check the ADR 01 Testing Report for details on manufacturer and inspector testing procedures (require proof from them),SRP8-011,Tailights,Chassis and Bodywork,"Annex 5, Annex 6"
