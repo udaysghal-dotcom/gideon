@@ -1,8 +1,8 @@
 """
 Apply schema.cypher and load the cleaned ADR data into Neo4j.
 
-Reads project_adr_map_clean.csv and every adr_XX.csv in the data directory.
-Don't forget to load Neo4j credentials into .env file
+Reads project_adr_map_clean.csv, every adr_XX.csv and (if present) adr_info.csv
+in the data directory. Don't forget to load Neo4j credentials into .env file
 
 Usage:
     python3 db/scripts/load_graph.py [--data (directory of cleaned csvs)] [--reset] [--dry-run]
@@ -11,6 +11,7 @@ Usage:
 
 import argparse
 import csv
+import hashlib
 import os
 import re
 import sys
@@ -22,7 +23,8 @@ REPO = DB.parent
 DEFAULT_DATA = DB / "adr_data"
 SCHEMA_FILE = DB / "schema" / "schema.cypher"
 MAP_FILE = "project_adr_map_clean.csv"
-ADR_FILE_GLOB = "adr_*.csv"
+ADR_INFO_FILE = "adr_info.csv"
+ADR_FILE_GLOB = "adr_[0-9]*.csv"
 
 PROJECT_ID_PATTERN = re.compile(r"SRP8-\d{3}")
 ADR_PATTERN = re.compile(r"ADR[-_]0*(\d+)", re.IGNORECASE)
@@ -113,14 +115,15 @@ def parse_requirements(data_dir, warn):
             name = text(row.get("Req Name"))
             if not (checklist or clause or name):
                 continue
-            requirement_id = "|".join([code, checklist, clause, name])
+            details = (row.get("Details") or "").strip()
+            digest = hashlib.sha1(details.encode()).hexdigest()[:8]
+            requirement_id = "|".join([code, clause, name, digest])
             requirements.setdefault(requirement_id, {
                 "id": requirement_id,
                 "adr": code,
-                "checklist": checklist or None,
                 "clause": clause or None,
                 "name": name or None,
-                "details": (row.get("Details") or "").strip() or None,
+                "details": details or None,
             })
 
             project_id = text(row.get("Project ID"))
@@ -129,12 +132,32 @@ def parse_requirements(data_dir, warn):
             if not PROJECT_ID_PATTERN.fullmatch(project_id):
                 warn(f"{path.name}: checklist {checklist} has invalid Project ID {project_id!r}")
                 continue
-            verifications[(requirement_id, project_id)] = {
+            method = " ".join((row.get("Verification Method") or "").split()) or None
+            verification = verifications.setdefault((requirement_id, project_id), {
                 "requirementId": requirement_id,
                 "projectId": project_id,
-                "method": text(row.get("Verification Method")) or None,
-            }
+                "method": method,
+                "checklists": [],
+            })
+            if method and verification["method"] and method != verification["method"]:
+                warn(f"{path.name}: checklist {checklist} gives {project_id} method {method!r}, "
+                     f"keeping {verification['method']!r}")
+            verification["method"] = verification["method"] or method
+            if checklist and checklist not in verification["checklists"]:
+                verification["checklists"].append(checklist)
     return list(requirements.values()), list(verifications.values()), adrs
+
+
+def parse_adr_names(path):
+    if not path.exists():
+        return {}
+    names = {}
+    for row in read_csv(path)[1]:
+        parsed = adr_code(row.get("ADR Number"))
+        name = " ".join((row.get("ADR Name") or "").split())
+        if parsed and name:
+            names[parsed[0]] = name
+    return names
 
 
 def schema_statements(path):
@@ -168,7 +191,7 @@ LOAD_QUERIES = [
         """
         UNWIND $rows AS row
         MERGE (a:ADR {code: row.code})
-        SET a.number = row.number
+        SET a.number = row.number, a.name = row.name
         """,
     ),
     (
@@ -190,7 +213,6 @@ LOAD_QUERIES = [
         MATCH (a:ADR {code: row.adr})
         MERGE (r:Requirement {id: row.id})
         SET r.adr = row.adr,
-            r.checklist = row.checklist,
             r.clause = row.clause,
             r.name = row.name,
             r.details = row.details
@@ -205,7 +227,7 @@ LOAD_QUERIES = [
         MATCH (r:Requirement {id: row.requirementId})
         MATCH (p:Project {id: row.projectId})
         MERGE (r)-[v:VERIFIED_BY]->(p)
-        SET v.method = row.method
+        SET v.method = row.method, v.checklists = row.checklists
         """,
     ),
 ]
@@ -227,6 +249,7 @@ def main():
 
     projects, departments, adr_links, map_adrs = parse_project_map(map_path, warn)
     requirements, verifications, file_adrs = parse_requirements(args.data, warn)
+    adr_names = parse_adr_names(args.data / ADR_INFO_FILE)
 
     for code in sorted(set(map_adrs) - set(file_adrs)):
         warn(f"{code} is referenced in {MAP_FILE} but has no requirements file")
@@ -234,7 +257,12 @@ def main():
     for project_id in sorted({v["projectId"] for v in verifications} - known_projects):
         warn(f"Project {project_id} appears in an ADR file but not in {MAP_FILE}")
 
-    adrs = [{"code": code, "number": number} for code, number in sorted({**map_adrs, **file_adrs}.items())]
+    all_adrs = sorted({**map_adrs, **file_adrs}.items(), key=lambda item: item[1])
+    if adr_names:
+        for code, _ in all_adrs:
+            if code not in adr_names:
+                warn(f"{code} has no name in {ADR_INFO_FILE}")
+    adrs = [{"code": code, "number": number, "name": adr_names.get(code)} for code, number in all_adrs]
     batches = {
         "projects": projects,
         "departments": departments,
