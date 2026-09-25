@@ -226,7 +226,7 @@ class ChatSession:
 
     def context_line(self):
         """For example: '1000/16384 tokens used'."""
-        return f"{self.context_tokens}/{self.num_ctx} tokens used"
+        return f"{(self.context_tokens * 100) // self.num_ctx}%"
 
     async def processor(self):
         """GPU/CPU split for this chat's model, matching `ollama ps`."""
