@@ -7,6 +7,7 @@ import ollama
 
 from chatbot.agent import ChatSession
 from chatbot.racecar import Racecar
+from design.logo import Logo
 
 COMMANDS = (
     "/reset, /model <name>, /debug, /context, /processor, "
@@ -76,7 +77,8 @@ async def chat_loop(session):
         else:
             car.print(grey(f"{name} result:\n{text}"))
 
-    print(f"ADR compliance chat. Model {session.model}, context {session.num_ctx}.")
+    Logo().print()
+    print(f"ADR compliance assistant. Model {session.model}, context {session.num_ctx}.")
     print(f"Commands: {COMMANDS}")
     while True:
         try:
@@ -128,6 +130,7 @@ async def chat_loop(session):
             continue
         car = Racecar()
         if not show_process:
+            print()
             car.start()
         try:
             try:
@@ -165,7 +168,6 @@ async def run():
         print()
     except Exception as exc:
         print(f"Could not start the chat: {exc}")
-
 
 def main():
     try:
