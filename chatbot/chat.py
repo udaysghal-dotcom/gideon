@@ -6,8 +6,12 @@ import sys
 import ollama
 
 from chatbot.agent import ChatSession
+from chatbot.racecar import Racecar
 
-COMMANDS = "/reset, /model <name>, /debug, /context, /processor, /quit"
+COMMANDS = (
+    "/reset, /model <name>, /debug, /context, /processor, "
+    "/process, /process-show, /process-hide, /quit"
+)
 
 
 def grey(text):
@@ -31,15 +35,46 @@ def split_command(line):
     return command.lower(), rest.strip()
 
 
+def process_mode(show):
+    if show:
+        return "Thinking is shown. Thinking and lookups will appear while the model works."
+    return "Thinking is hidden. A racecar will drive while the model works."
+
+
 async def chat_loop(session):
     debug = False
+    show_process = True
+    thinking_open = False
+    car = Racecar()
+
+    def end_thinking():
+        nonlocal thinking_open
+        if thinking_open:
+            print(flush=True)
+            thinking_open = False
+
+    def on_thinking(text):
+        nonlocal thinking_open
+        if not show_process:
+            return
+        if not thinking_open:
+            print(grey("thinking: "), end="")
+            thinking_open = True
+        print(grey(text), end="", flush=True)
 
     def on_lookup(name, arguments):
-        print(grey(format_lookup(name, arguments)), flush=True)
+        if show_process:
+            end_thinking()
+            print(grey(format_lookup(name, arguments)), flush=True)
 
     def on_result(name, text):
-        if debug:
+        if not debug:
+            return
+        if show_process:
+            end_thinking()
             print(grey(f"{name} result:\n{text}"), flush=True)
+        else:
+            car.print(grey(f"{name} result:\n{text}"))
 
     print(f"ADR compliance chat. Model {session.model}, context {session.num_ctx}.")
     print(f"Commands: {COMMANDS}")
@@ -82,10 +117,29 @@ async def chat_loop(session):
             if command == "processor":
                 print(await session.processor())
                 continue
+            if command in {"process", "process-show", "process-hide"}:
+                if command == "process":
+                    show_process = not show_process
+                else:
+                    show_process = command == "process-show"
+                print(process_mode(show_process))
+                continue
             print(f"Unknown command. Commands: {COMMANDS}")
             continue
+        car = Racecar()
+        if not show_process:
+            car.start()
         try:
-            answer = await session.ask(line, on_lookup=on_lookup, on_result=on_result)
+            try:
+                answer = await session.ask(
+                    line,
+                    on_lookup=on_lookup,
+                    on_result=on_result,
+                    on_thinking=on_thinking,
+                )
+            finally:
+                await car.stop()
+                end_thinking()
         except KeyboardInterrupt:
             print()
             return
