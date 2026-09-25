@@ -1,4 +1,4 @@
-""" Very cool I know"""
+""" Very cool I know """
 
 import sys
 
@@ -18,13 +18,28 @@ RACING = """\
  ██║  ██║ ██║  ██║ ╚██████╗ ██║ ██║ ╚████║ ╚██████╔╝
  ╚═╝  ╚═╝ ╚═╝  ╚═╝  ╚═════╝ ╚═╝ ╚═╝  ╚═══╝  ╚═════╝"""
 
-# Column range of "UNSW" within each SUNSWIFT row.
 UNSW_START = 9
 UNSW_END = 50
 
 WHITE = "\033[38;2;255;255;255m"
-YELLOW = "\033[38;2;255;230;0m"
 RESET = "\033[0m"
+
+YELLOW_TOP = (255, 230, 0)
+YELLOW_BOTTOM = (179, 134, 0)
+
+
+def rgb(colour):
+    red, green, blue = colour
+    return f"\033[38;2;{red};{green};{blue}m"
+
+
+def gradient(start, end, steps):
+    if steps == 1:
+        return [start]
+    return [
+        tuple(round(a + (b - a) * i / (steps - 1)) for a, b in zip(start, end))
+        for i in range(steps)
+    ]
 
 
 class Logo:
@@ -34,10 +49,12 @@ class Logo:
     @staticmethod
     def _render():
         rows = []
-        for row in SUNSWIFT.splitlines():
+        sunswift = SUNSWIFT.splitlines()
+        yellows = gradient(YELLOW_TOP, YELLOW_BOTTOM, len(sunswift))
+        for row, yellow in zip(sunswift, yellows):
             rows.append(
                 WHITE + row[:UNSW_START]
-                + YELLOW + row[UNSW_START:UNSW_END]
+                + rgb(yellow) + row[UNSW_START:UNSW_END]
                 + WHITE + row[UNSW_END:]
                 + RESET
             )
