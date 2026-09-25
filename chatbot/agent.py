@@ -14,7 +14,7 @@ from contextlib import AsyncExitStack
 
 from mcp import Client
 from mcp.client.stdio import StdioServerParameters
-from ollama import AsyncClient
+from ollama import AsyncClient, Message, ResponseError
 
 from chatbot.graph import REPO, load_env
 
@@ -171,7 +171,8 @@ class ChatSession:
         load_env(REPO / ".env")
         self.model = os.environ.get("CHAT_MODEL", DEFAULT_MODEL).strip() or DEFAULT_MODEL
         self.num_ctx = _int_env("CHAT_NUM_CTX", DEFAULT_NUM_CTX)
-        self.think = _bool_env("CHAT_THINK", False)
+        self.think = _bool_env("CHAT_THINK", True)
+        self._models_without_thinking = set()
         self.messages = []
         self.tools = []
         self.context_tokens = 0
@@ -225,7 +226,7 @@ class ChatSession:
         self.last_tool_results = []
 
     def context_line(self):
-        """For example: '1000/16384 tokens used'."""
+        """Example: "15%"."""
         return f"{(self.context_tokens * 100) // self.num_ctx}%"
 
     async def processor(self):
@@ -236,35 +237,73 @@ class ChatSession:
             return "Ollama is not running."
         return processor_for(running.models, self.model)
 
-    async def ask(self, question, on_lookup=None, on_result=None):
-        """Answer one question. Call on_lookup(name, arguments) before each tool."""
+    async def ask(self, question, on_lookup=None, on_result=None, on_thinking=None):
+        """Answer one question.
+
+        Calls on_lookup(name, arguments) before each tool, on_result(name, text)
+        after it, and on_thinking(text) for each piece of streamed thinking.
+        """
         self.last_tool_results = []
         self.messages.append({"role": "user", "content": question})
         user_index = len(self.messages) - 1
         try:
-            return await self._answer(user_index, on_lookup, on_result)
+            return await self._answer(user_index, on_lookup, on_result, on_thinking)
         except Exception:
             self.messages = self.messages[:user_index]
             raise
 
-    async def _answer(self, user_index, on_lookup, on_result):
+    async def _step(self, on_thinking):
+        """One model reply. Retries without thinking if the model has none."""
+        think = self.think and self.model not in self._models_without_thinking
+        try:
+            return await self._stream(think, on_thinking)
+        except ResponseError as exc:
+            if not think or "thinking" not in str(exc).lower():
+                raise
+            self._models_without_thinking.add(self.model)
+            return await self._stream(False, on_thinking)
+
+    async def _stream(self, think, on_thinking):
+        content, thinking, calls = [], [], []
+        last = None
+        stream = await self._ollama.chat(
+            model=self.model,
+            messages=self.messages,
+            tools=self.tools,
+            think=think,
+            stream=True,
+            keep_alive=KEEP_ALIVE,
+            options={"num_ctx": self.num_ctx},
+        )
+        async for chunk in stream:
+            last = chunk
+            part = chunk.message
+            if part.thinking:
+                thinking.append(part.thinking)
+                if on_thinking:
+                    on_thinking(part.thinking)
+            if part.content:
+                content.append(part.content)
+            if part.tool_calls:
+                calls.extend(part.tool_calls)
+        reply = Message(
+            role="assistant",
+            content="".join(content),
+            thinking="".join(thinking) or None,
+            tool_calls=calls or None,
+        )
+        return reply, last
+
+    async def _answer(self, user_index, on_lookup, on_result, on_thinking):
         for _ in range(MAX_TOOL_ROUNDS):
-            response = await self._ollama.chat(
-                model=self.model,
-                messages=self.messages,
-                tools=self.tools,
-                think=self.think,
-                keep_alive=KEEP_ALIVE,
-                options={"num_ctx": self.num_ctx},
-            )
-            reply = response.message
+            reply, response = await self._step(on_thinking)
             self.messages.append(reply)
             calls = list(reply.tool_calls or [])
             if not calls:
                 dropped = self.messages[user_index + 1 : -1]
                 self.context_tokens = context_after_trim(
-                    response.prompt_eval_count or 0,
-                    response.eval_count or 0,
+                    getattr(response, "prompt_eval_count", None) or 0,
+                    getattr(response, "eval_count", None) or 0,
                     "\n".join(message_text(item) for item in dropped),
                     getattr(reply, "thinking", None) or "",
                 )
