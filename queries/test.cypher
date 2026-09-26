@@ -1,2 +1,2 @@
 MATCH (n)
-RETURN count(n) AS nodeCount;
+RETURN count(n) AS node_count;
