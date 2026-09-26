@@ -6,7 +6,7 @@ import sys
 import ollama
 
 from chatbot.agent import ChatSession
-from chatbot.racecar import Racecar
+from design.racecar import Racecar
 from design.logo import Logo
 
 COMMANDS = (
