@@ -1,0 +1,21 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,4.1,Retro-reflector device approval identification,Every retro-reflecting device submitted for approval must bear:,SRP8-171,Inspection
+2,4.1.1,Retro-reflector device approval identification,the trade name or mark of the applicant;,SRP8-171,Inspection
+3,4.1.2,Retro-reflector device approval identification,"the word ""TOP"" inscribed horizontally on the highest part of the illuminating surface, if such an indication is necessary to determine without ambiguity the angle or angles of rotation prescribed by the manufacturer.",SRP8-171,Inspection
+4,4.2,Retro-reflector device approval identification,A space of sufficient size to accommodate the approval mark shall be provided on every device. This space shall be shown on the drawings referred to in paragraph 3.1.1. above.,SRP8-171,Inspection
+5,4.3,Markings on device,"The markings must be applied on the illuminating surface, or on one of the illuminating surfaces, of the retro-reflecting device and must be visible from the outside when the retro-reflecting device is fitted on the vehicle.",SRP8-171,Inspection
+6,4.4,Markings on device,The markings must be clearly legible and be indelible.,SRP8-171,Inspection
+7,6.2,Retro-reflecting device components dismantling,The components of retro-reflecting devices must not be capable of being easily dismantled.,SRP8-171,Test
+8,6.3,Retro-reflecting unit replacability,Retro-reflecting optical units may not be replaceable.,SRP8-171,Inspection
+9,6.4,Retro-reflecting device surface,The outer surface of retro-reflecting devices must be easy to clean. Hence it must not be a rough surface; any protuberances it may exhibit must not prevent easy cleaning.,SRP8-171,Inspection
+10,6.5,durability and stability,For devices of Class IV A their means of fixation shall be such that they allow a stable and durable connection between the device and the vehicle.,SRP8-171,Inspection
+11,6.6,No access to inner surface of retro-reflector during use,There shall be no access to the inner surface of the retro-reflectors when in normal use.,SRP8-171,Inspection
+12,Annex 5 1.1,"Shape must not resemble letter, digit, or triangle","The shape of the illuminating surfaces must be simple, and not easily confused at normal observation distances, with a letter, a digit or a triangle.",SRP8-171,Inspection
+13,Annex 5 1.2.,"Shapes resembling O, I, U, 8 permitted","The preceding paragraph notwithstanding, a shape resembling the letters or digits of simple form O, I, U or 8 is permissible.",SRP8-171,Inspection
+14,Annex 5 2.3.,Maximum 15mm between optical units,"The illuminating surface may or may not be continuous. In any case, the shortest distance between two adjacent retro-reflecting optical units must not exceed 15mm.",SRP8-171,Measurement
+15,Annex 5 3.2.,Minimum light-emitting surface area of 25cm²,The light emitting surface of the retro-reflecting device must be at least 25cm2.,SRP8-171,Measurement
+16,Annex 6 1.1.,Combined optical unit and filter must not be separable,"Retro-reflecting devices may consist of a combined retro-reflecting optical unit and filter, which must be so designed that they cannot be separated under normal conditions of use.",SRP8-171,Inspection
+17,Annex 6 2.,Colourless reflection within photometric limits,Picture,SRP8-171,Test
+18,Annex 6 3.,No selective reflection; minimal coordinate shift,"Clear retro-reflecting devices must not produce a selective reflection, that is to say, the trichromatic co-ordinates ""x"" and ""y"" of the standard illuminant ""A"" used to illuminate the retro-reflecting device must not undergo a change of more than 0.01 after reflection by the retro-reflecting device.",SRP8-171,Test
+19,Annex 7 3.1.1,CIL values for red retro-reflecting devices,,SRP8-171,Test
+19,Annex 8 2.1.,"Resistance to humidity, corrosion, and degradation","Retro-reflecting devices must be so designed that they retain the prescribed photometric and colorimetric characteristics despite the humidity and corrosive influences to which they are normally exposed. The resistance of the front surface to tarnishing and of the protection of the rear face to deterioration shall be checked, particularly when an essential metal component seems liable to be attacked.",SRP8-171,Test

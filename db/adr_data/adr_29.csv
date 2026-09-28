@@ -1,0 +1,16 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,29.1.0.1,Meet reqs from Manufacturer,The vehicle must meet the requirements of either clauses 29.1.1 or 29.1.2 at the ‘Manufacturer’s’ option.,SRP8-001,
+2,29.1.0.2,Crush Resistance Determination,"The vehicle must be so constructed that when any side door which can be used for occupant access is tested in accordance with clause 29.2, the crush resistance as determined by clause 29.3 must not be less than the following:",SRP8-001,
+3,29.1.1.0,Reqs for 'Seats removed',"With ‘Seats’ that may affect the load upon, or deflection of, the side of the vehicle body removed from the vehicle, the vehicle must meet the requirements of Clauses 29.1.1.1 to 29.1.1.3.",SRP8-001,
+4,29.1.1.1,Initial Crush Resistance,"For initial crush resistance: 10 kN or 0.83 times the unladen weight of the vehicle, whichever is the lesser figure;",SRP8-001,
+5,29.1.1.2,Intermediate Crush Resistance,"For intermediate crush resistance: 15.5 kN or 1.3 times the unladen weight of the vehicle, whichever is the lesser figure; and",SRP8-001,
+6,29.1.1.3,Peak Crush Resistance,"For peak crush resistance: 31 kN or 2 times the unladen weight of the vehicle, whichever is the lesser figure.",SRP8-001,
+7,5.2.0,Adjustable Seat Conditions,"With ‘Seats’ installed in the vehicle, and located in any horizontal or vertical position to which they can be adjusted and at any seat-back angle to which they can be adjusted, the vehicle must meet the requirements of clauses 29.1.2.1 to 29.1.2.3.",SRP8-001,
+8,29.1.2.1,Hinge Support,"For initial crush resistance:- 10 kN or 0.83 times the unladen weight of the vehicle, whichever is the lesser figure;",SRP8-001,
+9,29.1.2.2,Longitudinal Hinge Separation,"For intermediate crush resistance: 19.44 kN or 1.63 times the unladen weight of the vehicle, whichever is the lesser figure; and",SRP8-001,
+10,29.1.2.3,Transverse Hinge Separation,"for peak crush resistance: 55.33 kN or 3.5 times the unladen weight of the vehicle, whichever is the lesser figure.",SRP8-001,
+13,29.2,Test Procedure (NA),Crush test procedure not applicable due to SEVs list exemption (outlined in simplified road standards),,
+12,29.3,Determination of Crush Resistance (Definitions),"From the results recorded as specified in clause 29.2.3.5, a curve of load versus displacement must be plotted and the integral of the applied load with respect to the crush distances specified in clause 29.3.2 and clause 29.3.3 obtained. These quantities divided by the specified crush distances represent the average forces required to deflect the door over these distances.
+The initial crush resistance is the average force required to deform the door over the initial 155 mm of crush.
+The intermediate crush resistance is the average force required to deform the door over the initial 310 mm of crush.
+The peak crush resistance is the largest force recorded over a total crush distance not exceeding 460 mm.",,

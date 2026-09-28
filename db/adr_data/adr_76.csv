@@ -1,0 +1,74 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,4.1,N/A,"Daytime running lamps fitted to vehicles in accordance with ADRs 13/...,
+19/... or 67/... and required to comply with this ADR, must comply with
+either:",SRP8-012,Annex
+2,,N/A,"a) The technical requirements of Appendix A as varied by part 5
+Exemptions and Alternative Procedures and Part 6 Supplementary
+General Requirements; or",SRP8-012,Annex
+3,,N/A,b) The alternative standards set out in part 7 Alternative Standards.,SRP8-012,Inspection
+4,6,SUPPLEMENTARY GENERAL REQUIREMENTS,"The following general requirements are supplementary to the
+requirements of Appendix A.",SRP8-012,Test
+5,6.1,N/A,"The requirements and procedures set out in Annexes 4 and 5 of Appendix
+A are acceptable for the purposes of demonstrating compliance with the
+technical requirements of this rule.",SRP8-012,Annex
+6,6.1,,"Each daytime running lamp shall conform to the specifications set forth
+in the paragraphs below. An interdependent lamp system shall meet the
+requirements when all its interdependent lamps are operated together.",SRP8-012,Test
+7,6.2,,"Daytime running lamps shall be so designed and constructed that in
+normal use, despite the vibration to which they may then be subjected,
+they continue to function satisfactorily and retain the characteristics
+prescribed by this Regulation.",SRP8-012,Test
+8,6.3,,"In the case of light source modules, it shall be checked that:",SRP8-012,Inspection
+9,6.3.1,,The design of the light source module(s) shall be such as:,SRP8-012,Inspection
+10,,,"(a) That each light source module can only be fitted in no other position
+than the designated and correct one and can only be removed with the
+use of tool(s);",SRP8-012,Inspection
+11,,,"(b) If there are more than one light source module used in the housing for
+a device, light source modules having different characteristics cannot
+be interchanged within the same lamp housing.",SRP8-012,Inspection
+12,6.3.2,,The light source module(s) shall be tamperproof.,SRP8-012,Inspection
+13,6.3.3,,"A light source module shall be so designed that regardless of the use of
+tool(s), it shall not be mechanically interchangeable with any replaceable
+approved light source.",SRP8-012,Inspection
+14,6.4,,"Daytime running lamps, which are reciprocally incorporated with another function, using a common light source, and designed to operate permanently with an electronic light source control gear to regulate the intensity of the light emitted, are permitted.",SRP8-012,Inspection
+15,6.5,,In the case of replaceable light source(s):,SRP8-012,Inspection
+16,6.5.1,N/A - wont be using filament light sources,"Any category or categories of filament lamp(s) approved according to Regulation No. 37 and/or Regulation No. 128 may be used, provided that no restriction on the use is made in Regulation No. 37 and its series of amendments in force at the time of application for type approval or in Regulation No. 128 and its series of amendments in force at the time of application for type approval.",SRP8-012,Inspection
+17,6.5.2,,The design of the daytime running lamp shall be such that the light sources can be fixed in no other position but the correct one.,SRP8-012,Inspection
+18,6.5.3,,"The light source holder shall conform to the characteristics given in IEC
+Publication 60061. The holder data sheet relevant to the category of light
+source used, applies.",SRP8-012,Inspection
+19,7.1,,"The luminous intensity of the light emitted by each daytime running lamp
+shall not be less than 400 cd in the axis of reference.",SRP8-012,Test
+20,7.2,,"Outside the reference axis and within the angular fields defined in the
+arrangement diagram in Annex 6 to this Regulation, the intensity of the
+light emitted by each daytime running lamp shall:",SRP8-012,Annex
+21,7.2.1,,"In each direction corresponding to the points in the table of standard light
+distribution reproduced in Annex 3 to this Regulation, be not less than
+the minimum specified in paragraph 7.1. above, multiplied by the
+percentage specified in the said table of the direction in question, and",SRP8-012,Annex
+22,7.2.2,,"Not exceed 1,200 cd in any direction the daytime running lamp is visible.",SRP8-012,Test
+23,7.3,,"Moreover, throughout the field defined in the diagram in Annex 6, the
+intensity of the light emitted shall not be less than 1.0 cd.",SRP8-012,Annex
+24,7.4.1,,"In the case of a daytime running lamp containing more than one light
+source, the daytime running lamp shall comply with the minimum
+intensity required and the maximum intensity shall not be exceeded.",SRP8-012,Test
+25,7.4.2,,"In case of failure of any one light source in a single lamp containing
+more than one light source, one of the following provisions shall apply:",SRP8-012,Test
+26,,,"(a) The light intensity at the points of standard light distribution defined
+in Annex 3 to this Regulation shall be at least 80 per cent of the
+minimum intensity required, or",SRP8-012,Test
+27,,,"(b) The light intensity in the axis of reference shall be at least 50 per cent
+of the minimum intensity required, provided that a note in the
+communication form states that the lamp is only for use on a vehicle
+fitted with an operating tell-tale.",SRP8-012,Test
+28,7.4.3,,"A group of light sources, wired so that the failure of any one of them
+causes all of them to stop emitting light, shall be considered to be one
+light source.",SRP8-012,inspection
+29,8,Apparent Surface,"The area of the apparent surface in the direction of the axis of reference
+of the daytime running lamp shall be not less than 25 cm² and not more
+than 200 cm².",SRP8-012,Inspection
+30,9,Colour of Light,"The colour of the light shall be white. It shall be measured under the
+conditions as prescribed in paragraph 10. below.",SRP8-012,Test
+31,11.1,Heat Resistance Test,"The daytime running lamp shall be subjected to a one-hour test of continuous operation following a warm-up period of 20 minutes. The ambient temperature shall be 23°C ± 5°. The light source used shall be a light source of the category specified for the daytime running lamp, and shall be supplied with a current at a voltage such that it gives the specified average power at the corresponding test voltage. However, for daytime running lamps equipped with non-replaceable light sources (filament lamps and other), the test shall be made with the light sources present in the daytime running lamp, in accordance with paragraph 10.2. of this Regulation.",SRP8-012,Test
+32,11.2,Heat Resistance Test,"Where only the maximum power is specified, the test shall be carried out by regulating the voltage to obtain a power equal to 90 per cent of the specified power. The specified average or maximum power referred to above shall in all cases be chosen from the voltage range of 6, 12 or 24 V at which it reaches the highest value; for daytime running lamps equipped with non-replaceable light sources (filament lamps and other) the test conditions set in paragraph 10.2. of this Regulation shall be applied.",SRP8-012,Test
+33,11.3,Heat Resistance Test,"After the daytime running lamp has been stabilized at the ambient temperature, no distortion, deformation, cracking or colour modification shall be perceptible. In case of doubt the intensity of light according to paragraph 7. above shall be measured. At that measurement the values shall reach at least 90 per cent of the values obtained before the heat resistance test on the same device.",SRP8-012,Test

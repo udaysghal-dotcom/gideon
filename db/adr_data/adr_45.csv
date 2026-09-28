@@ -1,0 +1,6 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,5.1,Vibrational Durability and Functional Integrity Compliance,"Lamps shall be so designed and constructed that in normal use, despite the vibrations to which they may then be subjected, they continue to function satisfactorily and retain the characteristics prescribed by this Rule.",SRP8-055,
+2,6.1.2.1,Minimum Luminous Intensity Compliance,Minimum: 0.3 cd within the angles of light distribution of clause 6.1.3.,,
+3,6.1.2.2,Maximum Luminous Intensity Compliance,Maximum: 12 cd in any direction.,,
+4,6.1.3.1,Vertical Light Distribution Range,Vertical: from 5° above to 15° below the horizontal.,,
+5,6.1.3.2,Horizontal Light Distribution Range,Horizontal: forward from 45° to the left to 45° to the right.,,

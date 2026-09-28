@@ -1,0 +1,10 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+5,,SEVs exemption,Any requirements pertaining to crash tests and dummies have been excluded (presented as green highlight and strikethrough -> Systems will confirm with Peter G when submitting),,
+2,5.5.1,Conditions for visual indicator,"The vehicle must be fitted with a seatbelt warning system which activates a continuous or flashing ‘Visual Indicator’ for a period of not less than 4 seconds when at least one of the following occurs:
+The vehicle’s ignition switch is moved to the “on” position or to the “start” position, or
+Before the engine has been running for 60 seconds, or
+Before the vehicle has been in Forward motion for 500 metres, or
+Before the vehicle has reached a forward speed of 25 km/h
+The seatbelt warning system need not operate if the driver’s seatbelt is fastened or is withdrawn more than 10 cm from the retractor. An audible signal in addition to the ‘Visual Indicator’ is permissible.",SRP8-034,
+3,5.5.2,Visual Indicator telltale,The ‘Visual Indicator’ must display the seatbelt telltale below or the words “Fasten Seatbelts” or “Fasten Belts”.,SRP8-034,
+4,5.5.5,ADR 4 co-compliance,Any category of vehicle which complies with the requirements of ADR 4/... for seatbelt reminder systems of M1 category vehicles is deemed to comply with the clauses 5.5.1 to 5.5.2.,SRP8-034,

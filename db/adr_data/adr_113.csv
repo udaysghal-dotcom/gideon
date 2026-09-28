@@ -1,0 +1,28 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+2,5.1,,"All electrified vehicles that can be propelled in the normal mode, in reverse or at least one forward drive gear, without an internal combustion engine operating must comply with either:",SRP8-039,Inspection
+3,,,"a) the requirements of Appendix A, as varied by Section 6 – Exemptions and Alternative Procedures; or",SRP8-039,Inspection
+4,,,b) the technical requirements of the alternative standards set out in Section 7,SRP8-039,Inspection
+6,7.1,,"The technical requirements of United Nations Regulation No. 138 – UNIFORM PROVISIONS CONCERNING THE APPROVAL OF QUIET ROAD TRANSPORT VEHICLES WITH REGARD TO THEIR REDUCED AUDIBILITY, incorporating all amendments up to and including the 01 series of amendments.",SRP8-085,Test
+7,7.2,,"The technical requirements of the United States Code of Federal Regulations (CFR), Part 571 – Federal Motor Vehicle Safety Standards - Subpart B 49 CFR 571.141 Standard No. 141 – MINIMUM SOUND REQUIREMENTS FOR HYBRID AND ELECTRIC VEHICLES.",SRP8-085,Test
+11,,N/A,"For the purpose of this Regulation, the vehicle shall fulfil the following requirements:",,
+13,,,The sound emitted by the vehicle type submitted for approval shall be measured by the methods described in Annex 3 to this Regulation.,SRP8-085,Test
+14,,,The specifications of this Regulation are applicable for the speed range of greater than 0 km/h up to and inclusive 20 km/h. Operation of an AVAS is permitted at vehicle speeds outside the specification range. AVAS may be operational independent of the operation of an internal combustion engine inside or outside of the specified operation range.,SRP8-085,Test
+15,,,"If the vehicle that is not equipped with an AVAS fulfils the overall levels as specified in Table 2 below with a margin of +3 dB(A), the specification for one-third octave bands and the frequency shift do not apply.",SRP8-085,Test
+17,6.2.1.1,Speed test velocity value,The test speeds for approval are 10 km/h and 20 km/h.,,
+18,6.2.1.2,,"When tested under the conditions of Annex 3 paragraph 3.3.2., the vehicle shall emit a sound:",SRP8-085,Test
+19,,,(a) That has a minimum overall sound pressure level for the applicable test speed according to Table 2 of paragraph 6.2.8.;,SRP8-085,Test
+20,,,"(b) That has at least two of the one-third octave bands according to Table 2 of paragraph 6.2.8. At least one of these bands shall be below or within the 1,600 Hz one-third octave band;",SRP8-085,Test
+21,,,"(c) With minimum sound pressure levels in the chosen bands for the applicable test speed according to Table 2 of paragraph 6.2.8., column 3 or column 4.",SRP8-085,Test
+22,6.2.1.3,N/A,"If after a vehicle is tested in accordance with Annex 3 paragraph 3.3.2., for ten consecutive times within a series of measurements without recording a valid measurement because the vehicle's internal combustion engine (ICE) remains active or restarts and interferes with the measurements, the vehicle is exempted from this particular test.",,
+24,6.2.2.1,,"When tested under the conditions of Annex 3 paragraph 3.3.3. the vehicle shall emit a sound that has a minimum overall sound pressure level according to Table 2 of paragraph 6.2.8., column 5.",SRP8-085,Test
+25,6.2.2.2,N/A,"If after a vehicle is tested in accordance with Annex 3, paragraph 3.3.3., for ten consecutive times within a series of measurements without recording a valid measurement because the vehicle's ICE remains active or restarts and interferes with the measurements, the vehicle is exempted from this particular test.",,
+26,6.2.3,,Frequency shift to signify acceleration and deceleration,SRP8-085,Test
+27,6.2.3.1,,The intention of frequency shift is to acoustically inform road users about the change in vehicle speed.,SRP8-085,Test
+28,6.2.3.2,,"When tested under the conditions of Annex 3 paragraph 4, at least one tone within the frequency range as specified in paragraph 6.2.8. emitted by the vehicle shall vary proportionally with speed within each individual gear ratio by an average of at least 0.8 % per 1 km/h in the speed range from 5 km/h to 20 km/h inclusive when driving in forward direction. In case more than one frequency is shifted, only one frequency shift needs to fulfil the requirements.",SRP8-085,Inspection
+29,6.2.4,Stationary sound,The vehicle may emit a sound when stationary.,SRP8-085,Test
+30,6.2.5,Driver selectable sounds,The vehicle manufacturer may define alternative sounds which can be selected by the driver; each of these sounds shall be in compliance and approved with the provisions in paragraphs 6.2.1. to 6.2.3.,SRP8-085,Test
+31,6.2.6,AVAS Sound Level Variation,"If fitted, an AVAS may operate at different sound levels either automatically managed by the control unit or manually selected by the driver, each selected sound level shall be in compliance with the specifications outlined in paragraphs 6.2.1. to 6.2.3. and paragraphs 6.2.8. and 6.2.9.",SRP8-085,Inspection
+32,6.2.7,Pause function,Any pause function as defined in paragraph 2.7. shall be prohibited.,SRP8-085,Test
+33,6.2.8,Specifications on maximum sound level for AVAS,"When tested under the conditions of Annex 3 paragraph 3.3.2., a vehicle which is equipped with an AVAS, shall not emit an overall sound level of more than 75 dB(A), if driving in forward direction.4",SRP8-085,Test
+34,6.2.9,Minimum sound levels,"The sound level measured in accordance with the provisions of Annex 3 to this Regulation, mathematically rounded to the nearest integer value, shall have at least the followings values:",SRP8-085,Test
+35,,Minimum sound levels,,SRP8-085,

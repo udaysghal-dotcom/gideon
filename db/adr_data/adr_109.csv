@@ -1,0 +1,264 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,5.1.1. (c),Protection Against Electric Shock During Disconnection,(c) The voltage of the live parts becomes equal or below 60 V DC or equal or below 30 V AC (rms) within 1 s after the connector is separated.,SRP8-021,Test
+2,"5.1.1.1., 5.1.1.2.",Ingress Protection Requirements for High Voltage Live Parts,"5.1.1.1. For high voltage live parts inside the passenger compartment or luggage compartment, the protection degree IPXXD shall be provided.
+5.1.1.2. For high voltage live parts in areas other than the passenger compartment or luggage compartment, the protection degree IPXXB shall be provided.",SRP8-018,Test
+3,5.1.1.3,Protection Requirements for Tool-Free High Voltage Service Disconnects,"For a high voltage service disconnect which can be opened, disassembled or removed without tools, or for vehicles of categories N2, N3, M2 and M3, an operator controlled activation/deactivation device or equivalent, protection degree IPXXB shall be satisfied when it is opened, disassembled or removed.",SRP8-016,Test
+4,5.1.1.4.1,High Voltage Warning Symbol Requirement for REESS,"The symbol shown in Figure 2 shall be present on or near the REESS having high voltage capability. The symbol background shall be yellow, the bordering and the arrow shall be black.",SRP8-018,Inspection
+5,5.1.2.2,Electrical Continuity and Bonding Resistance,"5.1.2.2. The resistance between all exposed conductive parts and the electrical chassis shall be lower than 0.1 Ω when there is current flow of at least 0.2 amperes.
+The resistance between any two simultaneously reachable exposed conductive parts of the electrical protection barriers that are less than 2.5 m from each other shall not exceed 0.2 Ω. This resistance may be calculated using the separately measured resistances of the relevant parts of electric path.",SRP8-018,Annex 4
+6,5.1.3.1,Minimum Isolation Resistance Between High Voltage Buses and Chassis,"If AC high voltage buses and DC high voltage buses are galvanically isolated from each other, isolation resistance between the high voltage bus and the electrical chassis shall have a minimum value of 100 Ω/volt of the working voltage for DC buses, and a minimum value of 500 Ω/volt of the working voltage for AC buses.",SRP8-039,Annex 5A
+7,5.1.3.2,Isolation Resistance for Galvanically Connected High Voltage Buses,"If AC high voltage buses and DC high voltage buses are galvanically connected, isolation resistance between the high voltage bus and the electrical chassis shall have a minimum value of 500 Ω/volt of the working voltage.",SRP8-039,Annex 5A
+8,5.1.3.3,Isolation Resistance Monitoring System in Fuel Cell Vehicles,"In fuel cell vehicles, DC high voltage buses shall have an on-board isolation resistance monitoring system together with a warning to the driver if the isolation resistance drops below the minimum required value of 100 Ω/V. The function of the on-board isolation resistance monitoring system shall be confirmed as described in Annex 6.",SRP8-039,Annex 6
+9,5.1.3.4,Isolation Resistance Compliance Post-Disconnection of Conductive Connection,the isolation resistance between the high voltage bus and the electrical chassis shall comply with the requirements of paragraph 5.1.3.1. when the conductive connection is disconnected,SRP8-118,Annex 5A
+10,5.1.4,Post-Water Exposure Isolation Resistance Maintenance,"The vehicles shall maintain isolation resistance after exposure to water (e.g. washing, driving through standing water). This paragraph shall not apply to electrical circuits that are galvanically connected to each other, where the DC part of these circuits is connected to the electrical chassis and the specific voltage condition is fulfilled.",SRP8-039,Test
+11,5.1.4.4,Driver Warning for Low Isolation Resistance Detection,"If an isolation resistance monitoring system is provided, and the isolation resistance less than the requirements given in paragraph 5.1.3. is detected, a warning shall be indicated to the driver. The function of the on-board isolation resistance monitoring system shall be confirmed as described in Annex 6.",SRP8-059,Annex 6
+12,"5.2.1.1., 5.2.1.2.",REESS Installation and Compliance with Type Approval Conditions,"For a REESS which has been type approved in accordance with Part II of this series of Amendments to this Regulation, it shall be installed in accordance with the instructions provided by the manufacturer of the REESS, and in conformity with the description provided in Annex 1, Appendix 2 to this Regulation.
+The REESS including related vehicle components, systems and structure as applicable, shall comply with the respective requirements of paragraph 6. of this Regulation.",SRP8-016,"Annex 1, Annex 2"
+13,5.2.2,Ventilation Requirements for Open-Type Traction Battery Compartments,Places for containing open type traction batteries that may produce hydrogen gas shall be provided with a ventilation fan or a ventilation duct to prevent the accumulation of hydrogen gas.,SRP8-016,Inspection
+14,5.2.3,Driver Warning Indication in Active Driving Possible Mode,"The vehicle shall provide a warning to the driver when the vehicle is in active driving possible mode in the event specified in paragraphs 6.13. to 6.15.
+In case of optical warning, the tell-tale shall, when illuminated, be sufficiently bright to be visible to the driver under both daylight and night-time driving conditions, when the driver has adapted to the ambient roadway light conditions.
+This tell-tale shall be activated as a check of lamp function either when the propulsion system is turned to the ""On"" position, or when the propulsion system is in a position between ""On"" and ""Start"" that is designated by the manufacturer as a check position. This requirement does not apply to the tell-tale or text shown in a common space.",SRP8-175,Test
+15,5.2.4,Low State of Charge Warning for Pure Electric Vehicles,"For pure electric vehicles (vehicles equipped with a powertrain containing exclusively electric machines as propulsion energy converters and exclusively rechargeable electric energy storage systems as propulsion energy storage systems), a warning to the driver in the event of low REESS state of charge shall be provided.
+Based on engineering judgment, the manufacturer shall determine the necessary level of REESS energy remaining, when the driver warning is first provided.
+In case of optical warning, the tell-tale shall, when illuminated, be sufficiently bright to be visible to the driver under both daylight and night-time driving conditions, when the driver has adapted to the ambient roadway light conditions.",SRP8-018,Test
+16,5.3.1,Driver Indication on Activation of Propulsion System,"At least a momentary indication shall be given to the driver each time when the vehicle is first placed in ""active driving possible mode'' after manual activation of the propulsion system.
+However, this provision is optional under conditions where an internal combustion engine provides directly or indirectly the vehicle´s propulsion power upon start up.",SRP8-175,Test
+17,5.3.2,Driver Warning When Exiting Vehicle in Active Driving Possible Mode,"When leaving the vehicle, the driver shall be informed by a signal (e.g. optical or audible signal) if the vehicle is still in the active driving possible mode.",SRP8-175,Test
+18,5.3.3,Drive Inhibition During External Charging Connection,"If the REESS can be externally charged, vehicle movement by its own propulsion system shall be impossible as long as the vehicle connector is physically connected to the vehicle inlet.
+This requirement shall be demonstrated by using the vehicle connector specified by the vehicle manufacturer.
+The above requirements are only applicable for vehicles when charging from a stationary charging point, with a charging cable of finite length, through a vehicle coupler comprising a vehicle connector and a vehicle inlet.",SRP8-118,Test
+19,5.3.4,Drive Direction Control State Indication,The state of the drive direction control unit shall be identified to the driver.,SRP8-175,Test
+20,"5.4.3., 5.4.4.",Hydrogen Emission Limits During Normal and Failure Charge Conditions,"During a normal charge procedure in the conditions given in Annex 8, hydrogen emissions shall be below 125 g during 5 h, or below 25 x t2 g during t2 (in h).
+During a charge carried out by a charger presenting a failure (conditions given in Annex 8), hydrogen emissions shall be below 42 g. Furthermore the charger shall limit this possible failure to 30 minutes.",SRP8-124,Annex 8
+21,"5.4.5., 5.4.6., 5.4.7., 5.4.8., 5.4.9.",Control System Integrity and Fault Indication for Charging Operations,"All the operations linked to the REESS charging shall be controlled automatically, included the stop for charging. It shall not be possible to take a manual control of the charging phases.
+Normal operations of connection and disconnection to the mains or power cuts shall not affect the control system of the charging phases.
+Important charging failures shall be permanently indicated. An important failure is a failure that can lead to a malfunction of the charger during charging later on.
+The manufacturer has to indicate in the owner's manual, the conformity of the vehicle to these requirements.",SRP8-021,Annex 8
+22,6.2.1,Vibration Resistance Testing According to Annex 9A,The test shall be conducted in accordance with Annex 9A to this Regulation.,SRP8-016,Annex 9A
+23,6.3.1,Thermal Shock and Cycling Test Compliance (Annex 9B),This test shall be conducted in accordance with Annex 9B to this Regulation.,SRP8-016,Annex 9B
+24,6.4.1.2,Mechanical Shock Test Compliance (Annex 9C),The test shall be conducted in accordance with Annex 9C to this Regulation.,SRP8-016,Annex 9C
+25,6.4.2.2,Fire Resistance Test Compliance (Annex 9D),The test shall be conducted in accordance with Annex 9D to this Regulation.,SRP8-016,Annex 9D
+26,6.5.2,Component-Based Fire Resistance Test Using Gasoline Pool Fire,The test shall be conducted in accordance with Annex 9E paragraph 3.2.2. of this Regulation.,SRP8-016,Annex 9E
+27,6.6.1,External Short Circuit Protection Test Procedure,The test shall be conducted inaccordance with Annex 9F of this Regulation.,SRP8-016,Annex 9F
+28,6.7.1,Overcharge Protection Test Procedure,The test shall be conducted in accordance withAnnex 9G to this Regulation.,SRP8-016,Annex 9G
+29,6.8.1,Over-Discharge Protection Test Procedure,The test shall be conducted in accordance with Annex 9H to this Regulation.,SRP8-016,Annex 9H
+30,6.9.1,Over-Temperature Protection Test Procedure,The test shall be conducted in accordance with Annex 9I to this Regulation.,SRP8-016,Annex 9I
+31,6.10.1,Over-Current Protection Test Procedure,The test shall be conducted in accordance with Annex 9J to this Regulation.,SRP8-016,Annex 9J
+32,6.11,Low-Temperature Protection Requirements for REESS,"Low-temperature protection.
+REESS manufacturer must make available, at the request of the Technical Service with its necessity, the following documentations explaining safety performance of the system level or subsystem level of the vehicle to demonstrate that the REESS monitors and appropriately controls REESS operations at low temperatures at the safety boundary limits of the REESS:
+(a) A system diagram;
+(b) Written explanation on the lower boundary temperature for safe operation of REESS;
+(c) Method of detecting REESS temperature;
+(d) Action taken when the REESS temperature is at or lower than the lower boundary for safe operation of the REESS.",SRP8-016,Documentation
+33,6.12.1,Protection Against Hazardous Emissions from REESS During Vehicle Operation,"Under vehicle operation including the operation with a failure, the vehicle occupants shall not be exposed to any hazardous environment caused by emissions from REESS.",SRP8-016,Test
+34,6.13,Warning Signal Activation for Operational Failures Affecting REESS Safety,"The REESS or vehicle system shall provide a signal to activate the warning specified in paragraph 5.2.3. in the event of operational failure of the vehicle controls (e.g.
+input and output signals to the management system of REESS, sensors within REESS, etc.) that manage the safe operation of the REESS.",SRP8-175,Analysis (Simulation)
+35,6.14,Warning Signal Activation for Thermal Events in REESS,The REESS or vehicle system shall provide a signal to activate the warning specified in paragraph 5.2.3. in the case of a thermal event in the REESS (as specified by the manufacturer).,SRP8-175,Analysis (Simulation)
+36,6.15.1,Warning Signal Activation for Thermal Events in REESS,"The REESS or vehicle system shall provide a signal to activate the advance warning indication in the vehicle to allow egress or 5 minutes prior to the presence of a hazardous situation inside the passenger compartment caused by thermal propagation which is triggered by an internal short circuit leading to a single cell thermal runaway such as fire, explosion or smoke.",SRP8-175,Analysis (Simulation)
+37,16.15.2.2,Warning Signal Activation for Thermal Events in REESS,A system diagram of all relevant physical systems and components. Relevant systems and components are those which contribute to protection of vehicle occupants from hazardous effects caused by thermal propagation triggered by a single cell thermal runaway.,SRP8-175,Documentation
+38,Annex 4 (1.),Test Method for Measuring Resistance Between Electrical Chassis and Conductive Parts,"Test method using a resistance tester.
+The resistance tester is connected to the measuring points (typically, electrical chassis and electro conductive enclosure/electrical protection barrier) and the resistance is measured using a resistance tester that meets the specification that follows:
+(a) Resistance tester: Measurement current at least 0.2 A;
+(b) Resolution: 0.01 Ω or less;
+(c) The resistance R shall be less than 0.1 Ω.",SRP8-018,Test
+39,Annex 4 (2.1.),Test Procedure for Resistance Verification Using DC Power Supply Method,"Test Procedure.
+The DC power supply, voltmeter and ammeter are connected to the measuring points (Typically, electrical chassis and electro conductive enclosure/electrical protection barrier).
+The voltage of the DC power supply is adjusted so that the current flow becomes at least
+0.2 A.
+The current ""I"" and the voltage ""U"" are measured.
+The resistance ""R"" is calculated according to the following formula: R = U / I
+The resistance R shall be less than 0.1 Ω.",SRP8-018,Test
+40,Annex 5A (2.1.2.),Test Procedure for Resistance Verification Using DC Power Supply Method,"An isolation resistance test instrument shall be connected between the live parts and the electrical chassis. Then, the isolation resistance shall be measured by applying a DC voltage at least half of the working voltage of the high voltage bus.",SRP8-039,Test
+41,Annex 5A (2.2.2.),Voltmeter Specifications for Resistance Measurement Testing,The voltmeter used in this test shall measure DC values and shall have an internal resistance of at least 10 MΩ.,SRP8-039,Inspection
+42,"Annex 5A (2.2.3.1., 2.2.3.2., 2.2.3.3., 2.2.3.4., 2.2.3.5.)",Procedure for Measuring Electrical Isolation Resistance of High Voltage Bus,"The voltage is measured as shown in Figure 1 and the high voltage bus voltage (Ub) is recorded. Ub shall be equal to or greater than the nominal operating voltage of the REESS and/or energy conversion system as specified by the vehicle manufacturer. Measure and record the voltage (U1) between the negative side of the high voltage bus and the electrical chassis (see Figure 1). Measure and record the voltage (U2) between the positive side of the high voltage bus and the electrical chassis (see Figure 1). If U1 is greater than or equal to U2, insert a standard known resistance (Ro) between the negative side of the high voltage bus and the electrical chassis. With Ro installed, measure the voltage (U1’) between the negative side of the high voltage bus and the electrical chassis (see Figure 2).
+Calculate the electrical isolation (Ri) according to the following formula: Ri = Ro*Ub*(1/U1’ – 1/U1)
+If U2 is greater than U1, insert a standard known resistance (Ro) between the positive side of the high voltage bus and the electrical chassis. With Ro installed, measure the voltage (U2’) between the positive side of the high voltage bus and the electrical chassis (see Figure 3). Calculate the electrical isolation (Ri) according to the formula shown. Divide this electrical isolation value (in Ω) by the nominal operating voltage of the high voltage bus (in volts).
+Calculate the electrical isolation (Ri) according to the following formula: Ri = Ro*Ub*(1/U2’ – 1/U2)
+The electrical isolation value Ri (in Ω) divided by the working voltage of the high voltage bus (in volts) results in the isolation resistance (in Ω/V).",SRP8-039,Test
+43,Annex 6,Procedure for Verifying Isolation Resistance Using Inserted Resistor Method,"(a) Determine the isolation resistance, Ri, of the electric power train with the electrical isolation monitoring system using the procedure outlined Annex 5A.
+(b) If the minimum isolation resistance value required in accordance with paragraphs
+5.1.3.1. or 5.1.3.2. is 100 Ω/V, insert a resistor with resistance Ro between either side of the high voltage bus that exhibit lower value in U1 or U2 measured in accordance with paragraph 2.2.3. of Annex 5A and the electrical chassis. The magnitude of the resistor, Ro, shall be such that:
+1/(1/(95xU) – 1/Ri) ≤ Ro < 1/(1/(100xU) – 1/Ri)
+where U is the working voltage of the electric power train.
+(c) If the minimum isolation resistance value required in accordance with paragraphs
+5.1.3.1. or 5.1.3.2. is 500 Ω/V, insert a resistor with resistance Ro between either side of the high voltage bus that exhibit lower value in U1 or U2 measured in accordance with paragraph 2.2.3. of Annex 5A and the electrical chassis. The magnitude of the resistor, Ro, shall be such that:
+1/(1/(475xU) – 1/Ri) ≤ Ro < 1/(1/(500xU) – 1/Ri)
+where U is the working voltage of the electric power train.",SRP8-039,Test
+44,Annex 7A (1),Documentation Requirements for Isolation Resistance and Water Ingress Testing,"Documentation shall contain the following information:
+(a) on how the manufacturer tested isolation resistance compliance of electrical design of the vehicle by using fresh water;
+(b) on how, after the test had been carried out, the high-voltage component or system was inspected for ingress of water and how, depending on its mounting location, each high voltage component/system met the appropriate degree of protection against water.",SRP8-039,Documentation
+45,Annex 7A (2.2.),Water Spray Test Procedure for Open-Underneath Externally Mounted High-Voltage Components,"For electrical components, externally attached (e.g. in engine compartment), open underneath, both exposed or protected locations, the testing authority shall verify, with a view to confirming the compliance, whether the test is conducted by spraying the high- voltage component or system from all practicable directions with a stream of water from a standard test nozzle as shown in Figure 1. The following parameters are observed during the test in particular:
+(a) Nozzle internal diameter: 6.3 mm;
+(b) Delivery rate: 11.9 – 13.2 l/min;
+(c) Water pressure at the nozzle: approximately 30 kPa (0.3 bar);
+(d) Test duration per m2 of surface area of the tested high-voltage component or system: 1 min;
+(e) Minimum test duration: 3 min;
+(f) Distance from nozzle to tested high-voltage component or system surface: approximately 3 m (this distance may be reduced, if necessary to ensure proper wetting when spraying upwards)",SRP8-039,Test
+46,Annex 7A (2.3.),Splash Water Test Procedure for Externally Mounted Electrical Components,"For electrical components, externally attached (e.g. in engine compartment), covered from underneath, the testing authority shall verify, with a view to confirming the compliance, whether:
+(a) The cover protects the component against direct spray water from underneath and is not visible;
+(b) The test is conducted by using splashing test nozzle as shown in Figure 2;
+(c) The moving shield is removed from the spray nozzle and the machine is sprayed from all practicable directions;
+(d) The water pressure is adjusted to give a delivery rate of (10 ± 0.5) l/min (pressure approximately 80 kPa to 100 kPa (0.8 bar to 1.0 bar));
+(e) The test duration is 1 min/m2 of calculated surface area of the machine (excluding any mounting surface and cooling fin) with a minimum duration of 5 min.",SRP8-039,Test
+47,Annex 7A (3.),Isolation Resistance Compliance Check for Entire High-Voltage System or Components,"The entire high voltage system or each component is checked to comply with the isolation resistance requirement in paragraph 5.1.3. with the following conditions:
+(a) The electric chassis shall be simulated by an electric conductor, e.g. a metal plate, and the components are attached with their standard mounting devices to it;
+(b) Cables, where provided, shall be connected to the component.",SRP8-039,Test
+48,"Annex 8 (4.2., 4.3., 4.4., 4.5., 4.6.)",Hydrogen Emission Measurement System Specifications and Data Recording Requirements,"The hydrogen emission measurement enclosure shall be a gas-tight measuring chamber able to contain the vehicle/REESS under test. The vehicle/REESS shall be accessible from all sides and the enclosure when sealed shall be gas-tight in accordance with Appendix 1 to this annex. The inner surface of the enclosure shall be impermeable and non-reactive to hydrogen.
+The temperature conditioning system shall be capable of controlling the internal enclosure air temperature to follow the prescribed temperature throughout the test, with an average tolerance of ±2 K over the duration of the test.
+To accommodate the volume changes due to enclosure hydrogen emissions, either a variable-volume or another test equipment may be used. The variable-volume enclosure expands and contracts in response to the hydrogen emissions in the enclosure. Two potential means of accommodating the internal volume changes are movable panels, or a bellows design, in which impermeable bags inside the enclosure expand and contract in response to internal pressure changes by exchanging air from outside the enclosure. Any design for volume accommodation shall maintain the integrity of the enclosure as specified in Annex 8, Appendix 1.
+Any method of volume accommodation shall limit the differential between the enclosure internal pressure and the barometric pressure to a maximum value of ±5hPa.
+The enclosure shall be capable of latching to a fixed volume. A variable volume enclosure shall be capable of accommodating a change from its ""nominal volume"" (see Annex 8, Appendix 1, paragraph 2.1.1.), taking into account hydrogen emissions during testing.
+Analytical systems
+Hydrogen analyser
+The atmosphere within the chamber is monitored using a hydrogen analyser (electrochemical detector type) or a chromatograph with thermal conductivity detection. Sample gas shall be drawn from the mid-point of one side-wall or roof of the chamber and any bypass flow shall be returned to the enclosure, preferably to a point immediately downstream of the mixing fan.
+The hydrogen analyser shall have a response time to 90 per cent of final reading of less than 10 seconds. Its stability shall be better than 2 per cent of full scale at zero and at 80 per cent ± 20 per cent of full scale, over a 15-minute period for all operational ranges.
+The repeatability of the analyser expressed as one standard deviation shall be better than 1 per cent of full scale, at zero and at 80 per cent ± 20 per cent of full scale on all ranges used.
+The operational ranges of the analyser shall be chosen to give best resolution over the measurement, calibration and leak checking procedures.
+Hydrogen analyser data recording system
+The hydrogen analyser shall be fitted with a device to record electrical signal output, at a frequency of at least once per minute. The recording system shall have operating characteristics at least equivalent to the signal being recorded and shall provide a permanent record of results. The recording shall show a clear indication of the beginning and end of the normal charge test and charging failure operation.
+Temperature recording
+The temperature in the chamber is recorded at two points by temperature sensors, which are connected so as to show a mean value. The measuring points are extended approximately 0.1 m into the enclosure from the vertical centre line of each side-wall at a height of 0.9 ± 0.2 m.
+The temperatures in the proximity of the cells are recorded by means of the sensors.
+Temperatures shall, throughout the hydrogen emission measurements, be recorded at a frequency of at least once per minute.
+The accuracy of the temperature recording system shall be within ±1.0 K and the temperature shall be capable of being resolved to ±0.1 K.
+The recording or data processing system shall be capable of resolving time to ± 15 seconds.
+Pressure recording
+The difference delta p between barometric pressure within the test area and the enclosure internal pressure shall, throughout the hydrogen emission measurements, be recorded at a frequency of at least once per minute.
+The accuracy of the pressure recording system shall be within ±2 hPa and the pressure shall be capable of being resolved to ±0.2 hPa.
+The recording or data processing system shall be capable of resolving time to ±15 seconds.
+Voltage and current intensity recording
+The charger voltage and current intensity (battery) shall, throughout the hydrogen emission measurements, be recorded at a frequency of at least once per minute.
+The accuracy of the voltage recording system shall be within ±1 V and the voltage shall be capable of being resolved to ±0.1 V.
+The accuracy of the current intensity recording system shall be within ±0.5 A and the current intensity shall be capable of being resolved to ±0.05 A.
+The recording or data processing system shall be capable of resolving time to ±15 seconds.",SRP8-182,Test
+49,Annex 8 (5.1.1.2.),Initial Charging Procedure for REESS Prior to Hydrogen Emission Testing,"Initial charge of the REESS The charge is carried out:
+(a) With the charger;
+(b) In an ambient temperature between 293 K and 303 K. The procedure excludes all types of external chargers.
+The end of REESS charge criteria corresponds to an automatic stop given by the charger.
+This procedure includes all types of special charges that could be automatically or manually initiated like, for instance, the equalisation charges or the servicing charges.",SRP8-016,Test
+50,Annex 8 (5.1.3.),Battery Soak Procedure Prior to Hydrogen Emission Testing,"Soak
+Within fifteen minutes of completing the battery discharge operation specified in paragraph 5.1.2., the vehicle is parked in the soak area. The vehicle is parked for a minimum of 12 hours and a maximum of 36 hours, between the end of the traction battery discharge and the start of the hydrogen emission test during a normal charge. For this period, the vehicle shall be soaked at 293 K ± 2 K.",SRP8-016,Test
+51,Annex 8 (5.1.4.2.),Hydrogen Analyser Calibration Before Test,The hydrogen analyser shall be zeroed and spanned immediately prior to the test.,SRP8-182,Test
+52,Annex 8 (5.1.4.7.),Normal Charge Procedure and Overcharging Protocol,"Procedure of normal charge
+The normal charge is carried out with the charger and consists of the following steps:
+(a) Charging at constant power during t1;
+(b) Over-charging at constant current during t2. Over-charging intensity is specified by manufacturer and corresponds to the one used during equalisation charging.
+The end of REESS charge criteria corresponds to an automatic stop given by the charger to a charging time of t1 + t2. This charging time will be limited to t1 + 5 h, even if a clear indication is given to the driver by the standard instrumentation that the battery is not yet fully charged.",SRP8-021,Test
+53,Annex 8 (5.1.4.8.),Post-Test Calibration of Hydrogen Analyser,The hydrogen analyser shall be zeroed and spanned immediately before the end of the test.,SRP8-182,Test
+54,Annex 8 (5.1.5.9.),Charging Failure Procedure for Hydrogen Emission Testing,"Procedure of charging failure
+The charging failure is carried out with the suitable charger and consists of the following steps:
+(a) Charging at constant power during t'1;
+(b) Charging at maximum current as recommended by the manufacturer during 30 minutes. During this phase, the charger shall supply maximum current as recommended by the manufacturer.",SRP8-021,Test
+55,Annex 8 (5.2.3.),REESS Soak Conditions Prior to Hydrogen Emission Test,"Within 15 minutes of the end of the REESS discharge operation specified in paragraph 5.2.2. above, and before the start of the hydrogen emission test, the REESS shall be soaked at 293 K ± 2 K for a minimum period of 12 hours and a maximum of period of 36 hours.",SRP8-016,Test
+56,Annex 8 Appendix 1 (3.),REESS Soak Conditions Prior to Hydrogen Emission Test,"Calibration of the hydrogen analyser
+The analyser should be calibrated using hydrogen in air and purified synthetic air. See Annex 8, paragraph 4.8.2.",SRP8-056,Test
+57,Annex 8 (3.3.),Calibration Curve Accuracy for Hydrogen Analyser,The calibration curve shall not differ by more than two per cent from the nominal value of each calibration gas.,SRP8-182,Simulation Analysis
+58,Annex 8 (3.4.),Calibration Data Table and Polynomial Coefficient Application for Hydrogen Analyser,"Using the coefficients of the polynomial derived from paragraph 3.2. above, a table of analyser readings against true concentrations shall be drawn by steps no greater than 1 per cent of full scale. This is to be carried out for each analyser range calibrated.
+This table shall also contain other relevant data such as:
+(a) date of calibration;
+(b) span and zero potentiometer readings (where applicable);
+(c) nominal scale;
+(d) reference data of each calibration gas used;
+(e) real and indicated value of each calibration gas used together with the percentage differences;
+(f) calibration pressure of analyser.",SRP8-182,Documentation
+59,Annex 8 (3.5.),Use of Alternative Calibration Methods with Verified Equivalent Accuracy,"Alternative methods (e.g. computer, electronically controlled range switch) can be used if it is proven to the technical service that these methods give equivalent accuracy.",SRP8-056,Simulation Analysis
+60,Annex 9 Appendix 1,Standard Cycle Procedure: Discharge and Charge at Controlled Ambient Temperature,A standard cycle shall start with a standard discharge followed by a standard charge. The standard cycle shall be conducted at an ambient temperature of 20 ± 10 °C.,SRP8-016,Test
+61,Annex 9 Appendix 2 (3.),State of Charge (SOC) Thresholds for Testing Based on REESS Charging Type,"When the vehicle or REESS subsystem is tested, the SOC shall be no less than 95 per cent of the SOC according to paragraphs 1. and 2. above for REESS designed to be externally charged and shall be no less than 90 per cent of SOC according to paragraphs
+1. and 2. above for REESS designed to be charged only by an energy source on the vehicle. The SOC will be confirmed by a method provided by the manufacturer.",SRP8-016,Documentation
+62,Annex 9A (3.1.),"General Test Conditions for Vibration, Thermal, and Shock Testing of REESS","General test conditions
+The following conditions shall apply to the Tested-Device:
+(a) The test shall be conducted at an ambient temperature of 22 ± 5 °C;
+(b) At the beginning of the test, the SOC shall be adjusted in accordance with Annex 9, Appendix 2;
+(c) At the beginning of the test, all protection devices which affect the function(s) of the Tested-Device that are relevant to the outcome of the test shall be operational.",SRP8-085,Documentation
+63,Annex 9A (3.2.),Vibration Test Procedure for REESS Durability Evaluation,"Test procedures
+The Tested-Devices shall be subjected to a vibration having a sinusoidal waveform with a logarithmic sweep between 7 Hz and 50 Hz and back to 7 Hz traversed in 15 minutes. This cycle shall be repeated 12 times for a total of 3 hours in the vertical direction of the mounting orientation of the REESS as specified by the manufacturer.",SRP8-016,Test
+64,Annex 9A,Post-Vibration Standard Cycle and Observation Requirements for REESS,"After the vibration, a standard cycle as described in Annex 9, Appendix 1 shall be conducted, if not inhibited by the Tested-Device.
+The test shall end with an observation period of 1 h at the ambient temperature conditions of the test environment.",SRP8-016,Test
+65,Annex 9B (3.1.),Initial Test Conditions for REESS Thermal Shock and Cycling Evaluation,"General test conditions
+The following conditions shall apply to the Tested-Device at the start of the test:
+(a) The SOC shall be adjusted in accordance with Annex 9, Appendix 2;
+(b) All protection devices, which would affect the function of the Tested-Device and which are relevant to the outcome of the test shall be operational.",SRP8-187,Inspection
+66,Annex 9B (3.2.),Thermal Shock and Cycling Test Procedure for REESS,"Test procedure
+The Tested-Device shall be stored for at least six hours at a test temperature equal to 60
+± 2 °C or higher if requested by the manufacturer, followed by storage for at least six hours at a test temperature equal to -40 ± 2 °C or lower if requested by the manufacturer. The maximum time interval between test temperature extremes shall be 30 minutes. This procedure shall be repeated until a minimum of 5 total cycles are completed, after which the Tested-Device shall be stored for 24 hours at an ambient temperature of 22 ± 5 °C.
+After the storage for 24 hours, a standard cycle as described in Annex 9, Appendix 1 shall be conducted, if not inhibited by the Tested-Device.
+The test shall end with an observation period of 1 h at the ambient temperature conditions of the test environment.",SRP8-016,Test
+67,Annex 9C (3.1.),General Conditions for Mechanical Shock Testing of REESS,"General test conditions and requirements
+The following condition shall apply to the test:
+(a) The test shall be conducted at an ambient temperature of 20 ± 10 °C,
+(b) At the beginning of the test, the SOC shall be adjusted in accordance with Annex 9, Appendix 2;
+(c) At the beginning of the test, all protection devices which affect the function of the Tested-Device and which are relevant to the outcome of the test, shall be operational.",SRP8-187,Inspection
+68,Annex 9C (3.2.),Mechanical Shock Test Procedure and Pulse Requirements for REESS,"Test procedure
+The Tested-Device shall be decelerated or accelerated in compliance with the acceleration corridors which are specified in Tables 1 to 3. The manufacturer shall decide whether the tests shall be conducted in either the positive or negative direction or both.
+For each of the test pulses specified, a separate Tested-Device may be used.
+The test pulse shall be within the minimum and maximum value as specified in Tables 1 to 3. A higher shock level and /or longer duration as described in the maximum value in Tables 1 to 3 can be applied to the Tested-Device if recommended by the manufacturer.
+The test shall end with an observation period of 1 hour at the ambient temperature conditions of the test environment.",SRP8-016,Test
+69,Annex 9E (3.2.2.),Component-Based Fire Resistance Test Setup for REESS,"Component based test
+In case of component based test, the manufacturer may choose either gasoline pool fire test or LPG burner test.
+The Tested-Device shall be placed on a grating table positioned above the pan, in an orientation according to the manufacturer’s design intent.
+The grating table shall be constructed by steel rods, diameter 6-10 mm, with 4-6 cm in between. If needed the steel rods could be supported by flat steel parts.",SRP8-016,Test
+70,"Annex 9E (3.3., 3.3.1., 3.3.2., 3.3.3., 3.3.4., 3.3.4.1., 3.3.4.2., 3.3.4.3., 3.3.4.4.)",Gasoline Pool Fire Test Procedure for REESS Fire Resistance Evaluation,"Gasoline pool fire test set up for both vehicle-based and component-based test.
+The flame to which the Tested-Device is exposed shall be obtained by burning commercial fuel for positive-ignition engines (hereafter called ""fuel"") in a pan. The quantity of fuel shall be sufficient to permit the flame, under free-burning conditions, to burn for the whole test procedure.
+The fire shall cover the whole area of the pan during whole fire exposure. The pan dimensions shall be chosen so as to ensure that the sides of the Tested-Device are exposed to the flame. The pan shall therefore exceed the horizontal projection of the Tested-Device by at least 20 cm, but not more than 50 cm. The sidewalls of the pan shall not project more than 8 cm above the level of the fuel at the start of the test.
+The pan filled with fuel shall be placed under the Tested-Device in such a way that the distance between the level of the fuel in the pan and the bottom of the Tested-Device corresponds to the design height of the Tested-Device above the road surface at the unladen mass if paragraph 3.2.1. above is applied or approximately 50 cm if paragraph
+3.2.2. above is applied. Either the pan, or the testing fixture, or both, shall be freely movable.
+During phase C of the test, the pan shall be covered by a screen. The screen shall be placed 3 cm +/- 1 cm above the fuel level measured prior to the ignition of the fuel. The screen shall be made of a refractory material, as prescribed in Annex 9E - Appendix 1. There shall be no gap between the bricks and they shall be supported over the fuel pan in such a manner that the holes in the bricks are not obstructed. The length and width of the frame shall be 2 cm to 4 cm smaller than the interior dimensions of the pan so that a gap of 1 cm to 2 cm exists between the frame and the wall of the pan to allow ventilation. Before the test the screen shall be at least at the ambient temperature. The firebricks may be wetted in order to guarantee repeatable test conditions.
+If the tests are carried out in the open air, sufficient wind protection shall be provided and the wind velocity at pan level shall not exceed 2.5 km/h.
+The test shall comprise of three phases B-D, if the fuel is at least at temperature of 20°C. Otherwise the test shall comprise four phases A–D.
+Phase A: Pre-heating (Figure 1)
+The fuel in the pan shall be ignited at a distance of at least 3 m from the Tested-Device. After 60 seconds pre-heating, the pan shall be placed under the Tested-Device. If the size of the pan is too large to be moved without risking liquid spills etc. then the Tested- Device and test rig can be moved over the pan instead.
+Figure 1
+Phase A: Pre-heating
+Phase B: Direct exposure to flame (Figure 2)
+The Tested-Device shall be exposed to the flame from the freely burning fuel for 70 seconds.
+Figure 2
+Phase B: Direct exposure to flame
+Phase C: Indirect exposure to flame (Figure 3)
+As soon as phase B has been completed, the screen shall be placed between the burning pan and the Tested-Device. The Tested-Device shall be exposed to this reduced flame for a further 60 seconds.
+Instead of conducting phase C of the test, phase B may at the manufacturer’s discretion be continued for an additional 60 seconds.
+Figure 3
+Phase C: Indirect exposure to flame
+Phase D: End of test (Figure 4)
+The burning pan covered with the screen shall be moved back to the position described in phase A. No extinguishing of the Tested-Device shall be done. After removal of the pan the Tested-Device shall be observed until such time as the surface temperature of the Tested-Device has decreased to ambient temperature or has been decreasing for a minimum of 3 hours.
+Figure 4
+Phase D: End of test",SRP8-016,Test
+71,"Annex 9E (3.4., 3.4.1., 3.4.2., 3.4.3., 3.4.4., 3.4.5., 3.4.6., 3.4.7.)",LPG Burner Fire Test Procedure for Component-Based REESS Evaluation,"LPG burner fire test set up for component based test
+The Tested-Device shall be placed on a test equipment, in the position that the manufacturer's design intends.
+LPG burner shall be used to produce flame to which the Tested-Device is exposed. The height of the flame shall be about 60 cm or more, without the Tested-Device.
+The flame temperature shall be measured continuously by temperature sensors. An average temperature shall be calculated, at least every second for the duration of the whole fire exposure, as the arithmetic average of temperatures measured by all temperature sensors fulfilling the location requirements described in paragraph 3.4.4.
+All temperature sensors shall be installed at a height of 5 ± 1 cm below the lowest point of the Tested-Device's external surface when oriented as described in paragraph 3.4.1. At least one temperature sensor shall be located at the centre of Tested-Device, and at least four temperature sensors shall be located within 10 cm from the edge of the Tested-Device towards its centre with nearly equal distance between the sensors.
+The bottom of Tested-Device shall be exposed to the even flame directly and entirely by fuel combustion. LPG burner flame shall exceed the horizontal projection of the Tested- Device by at least 20 cm.
+An average temperature of 800 °C shall be reached within 30 seconds and maintained between 800°C and 1,100°C. The Tested-Device shall then be exposed to the frame for 2 minutes.
+After direct exposure to flame the Tested-Device shall be observed until such time as the surface temperature of the Tested-Device has decreased to ambient temperature or has been decreasing for a minimum of 3 hours.",SRP8-016,Test
+72,Annex 9F (3.2.),Short Circuit Test Procedure for REESS Protection Validation,"Short circuit
+At the start of the test all relevant main contactors for charging and discharging shall be closed to represent the active driving possible mode as well as the mode to enable external charging. If this cannot be completed in a single test, then two or more tests shall be conducted.
+For testing with a complete REESS or REESS subsystem(s), the positive and negative terminals of the Tested-Device shall be connected to each other to produce a short circuit. The connection used for this purpose shall have a resistance not exceeding 5 mΩ.
+For testing with a complete vehicle, the short circuit is applied through the breakout harness. The connection used for creating the short circuit (including the cabling) shall have a resistance not exceeding 5 mΩ.
+The short circuit condition shall be continued until the protection function operation of the REESS terminate the short circuit current is confirmed, or for at least one hour after the temperature measured on the casing of the Tested-Device has stabilised, such that the temperature gradient varies by a less than 4 °C through 2 hour.",SRP8-016,Test
+73,Annex 9G (3.2.4.),Overcharge Protection Test Using External Electricity Supply,"Charge by external electricity supply (component-based test). This procedure is applicable to component-based test:
+(a) The external charge/discharge equipment shall be connected to the main terminals of the REESS. The charge control limits of the test equipment shall be disabled;
+(b) The REESS shall be charged by the external charge/discharge equipment with the maximum charge current specified by the manufacturer. The charging shall be terminated when the REESS overcharge protection control terminates the REESS charge current. Where overcharge protection control of the REESS fails to operate, or if there is no such control, the charging shall be continued until the REESS temperature reaches 10 °C above its maximum operating temperature specified by the manufacturer. In the case where charge current is not terminated and where the REESS temperature remains less than 10 °C above the maximum operating temperature, the charging shall be terminated 12 hours after the start of charging by external electricity supply equipment;
+(c) Immediately after the termination of charging, one standard cycle as described in Annex 9, Appendix 1 shall be conducted, if it is not prohibited by the REESS, with external charge-discharge equipment.",SRP8-021,Test
+74,Annex 9H (3.2.4.),Over-Discharge Protection Test Using External Equipment,"Discharge by external equipment (component-based test). This procedure is applicable to component-based test:
+(a) All relevant main contactors shall be closed. The external charge-discharge shall be connected to the main terminals of the Tested-Device;
+(b) A discharge shall be performed with a stable current within the normal operating range as specified by the manufacturer;
+(c) The discharging shall be continued until the Tested-Device (automatically) terminates REESS discharge current or the temperature of the Tested-Device is stabilized such that the temperature varies by a gradient of less than 4 °C through 2 hours. Where an automatic interrupt function fails to operate, or if there is no such function, then the discharging shall be continued until the Tested-Device is discharged to 25 per cent of its nominal voltage level;
+(d) Immediately after the termination of the discharging, one standard charge followed by a standard discharge as described in Annex 9, Appendix 1 shall be conducted if not inhibited by the Tested-Device.",SRP8-016,Test
+75,"Annex 9I (4.2., 4.3., 4.3.1., 4.3.2., 4.4.)",Over-Temperature Protection Test Procedure for REESS Using External Charge/Discharge or Driving Operations,"The Tested-Device shall be continuously charged and discharged by the external charge/discharge equipment with a current that will increase the temperature of cells as rapidly as possible within the range of normal operation as defined by the manufacturer until the end of the test.
+Alternatively, the charge and discharge may be conducted by vehicle driving operations on chassis dynamometer where the driving operation shall be determined through consultation with the manufacturer to achieve the conditions above.
+The temperature of the chamber or oven shall be gradually increased, from 20 ± 10 °C or at higher temperature if requested by the manufacturer, until it reaches the temperature determined in accordance with paragraph 4.3.1. or 4.3.2. below as applicable, and then maintained at a temperature that is equal to or higher than this, until the end of the test.
+Where the REESS is equipped with protective measures against internal overheating, the temperature shall be increased to the temperature defined by the manufacturer as being the operational temperature threshold for such protective measures, to ensure that the temperature of the Tested-Device will increase as specified in paragraph 4.2. above.
+Where the REESS is not equipped with any specific measures against internal over- heating, the temperature shall be increased to the maximum operational temperature specified by the manufacturer.
+The end of test: The test will end when one of the followings is observed:
+(a) The Tested-Device inhibits and/or limits the charge and/or discharge to prevent the temperature increase;
+(b) The temperature of the Tested-Device is stabilised, which means that the temperature varies by a gradient of less than 4 °C through 2 hours;
+(c) Any failure of the acceptance criteria prescribed in paragraph 6.9.2.1. of the Regulation.",SRP8-016,Test
+76,Annex 9J (5.),Overcurrent Protection Test Using Breakout Harness for REESS Charging Validation,"Overcurrent during charging using breakout harness.
+This test procedure is applicable to REESS for vehicles that have the capability of charging by DC external electricity supply and for which the manufacturer provides information to connect a breakout harness to a location just outside the REESS that permits charging of the REESS:
+(a) The breakout harness is connected to the vehicle or REESS as specified by the manufacturer;
+(b) The external electricity supply equipment along with the overcurrent supply is connected to the breakout harness and charging of the REESS is initiated to achieve the highest normal charge current specified by the manufacturer;
+(c) The charge current is then increased over 5 seconds from the highest normal charge current to the overcurrent level determined in accordance with paragraph 2.(c) above. Charging is then continued at this overcurrent level;
+(d) The charging shall be terminated when the functionality of the vehicle's overcurrent protection terminates charging or the temperature of the Tested- Device is stabilized such that the temperature varies by a gradient of less than 4
+°C through 2 hours;
+(e) Immediately after the termination of charging, one standard cycle as described in Annex 9, Appendix 1 shall be conducted, if it is not prohibited by the vehicle.",SRP8-021,Test
+76,"6.13.1., 6.14.2., 6.15.2.2.",System Diagrams,A system diagram that identifies all the vehicle controls that manage REESS operations. The diagram must identify what components are used to generate a warning due to operational failure of vehicle controls to conduct one or more basic operations. A system diagram and written explanation describing the sensors and operation of the vehicle controls to manage the REESS in the event of a thermal event. A system diagram of all relevant physical systems and components. Relevant systems and components are those which contribute to protection of vehicle occupants from hazardous effects caused by thermal propagation triggered by a single cell thermal runaway.,SRP8-058,Documentation

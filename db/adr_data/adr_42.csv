@@ -1,0 +1,120 @@
+Checklist,Clause,Req Name,Details,Project ID,Verification Method
+1,5,Steering Control,The centreline of the steering control must not be located to the left of the centreline of the vehicle.,SRP8-022,
+2,6.2,Actuation of Engine Start Control conditions,"In the case of an M-Group or N-Group vehicle with an automatic transmission, actuation of the ‘Engine start control’ must not cause the vehicle to move.",SRP8-086,Demonstration
+3,6.2,Actuation of Engine Start Control conditions,"In the case of an M-Group or N-Group vehicle with an automatic transmission, actuation of the ‘Engine start control’ must not cause the vehicle to move.",SRP8-175,Demonstration
+4,7.1,Movable body panel,"Any movable body panel forward of the windscreen that serves to cover an engine, luggage, storage or battery compartment must be provided with a latch system.",SRP8-005,
+5,7.2,Obstructed panel opening,"A panel opening from the front, which in any open position, partially or completely obstructs a driver’s forward view through the windscreen, must be provided with a second latch position on the latch system, or with a second latch system.",SRP8-005,
+6,8.2.1,Wiping and washing system for windscreen,Every vehicle with a windscreen must be fitted with a power-driven windscreen wiping system and must have a windscreen washing system that can direct water onto the windscreen within the area swept by the windscreen wiper.,SRP8-082,
+7,8.2.1.1,Device for operating wipers and washer,The device or devices for operating the wipers and washer must be able to be controlled by the driver in the normal driving position.,SRP8-022,
+8,9.1.1,Demisting of windscreens,"Every vehicle with a windscreen, and a roof or provision for a roof, must be fitted with a device capable of removing condensed moisture from the inside of the windscreen.",SRP8-093,Demonstration
+9,10.1,Brake Hose and Brake Tubing (Front Brakes),"Flexible hydraulic brake hoses, air and vacuum brake tubing, air and vacuum hose, and flexible and hydraulic power hose, between the ‘Brake Power Unit 31/00’ or ‘Brake Power Unit 35/...’ and the master cylinder or its equivalent must:
+(a) conform to any edition of the United States Federal Motor Vehicle Safety Standard (FMVSS) No. 106 (49.CFR.571.106 – Brake Hoses) in force between 1 October 2010 and the commencement of this rule, or to an applicable SA, SAE, BS, JIS, DIN, ISO or UN standard for flexible brake hoses, air brake tubing or hose, vacuum brake tubing or hose, or hydraulic power tubing or hose, current between 1 January 2005 and the commencement of this rule;3 and
+(b) be fitted/routed so as to prevent chafing, kinking or other mechanical damage under normal motion of the moving vehicle parts.",SRP8-045,
+10,10.1,Brake Hose and Brake Tubing (Rear Brakes),"Flexible hydraulic brake hoses, air and vacuum brake tubing, air and vacuum hose, and flexible and hydraulic power hose, between the ‘Brake Power Unit 31/00’ or ‘Brake Power Unit 35/...’ and the master cylinder or its equivalent must:
+(a) conform to any edition of the United States Federal Motor Vehicle Safety Standard (FMVSS) No. 106 (49.CFR.571.106 – Brake Hoses) in force between 1 October 2010 and the commencement of this rule, or to an applicable SA, SAE, BS, JIS, DIN, ISO or UN standard for flexible brake hoses, air brake tubing or hose, vacuum brake tubing or hose, or hydraulic power tubing or hose, current between 1 January 2005 and the commencement of this rule;3 and
+(b) be fitted/routed so as to prevent chafing, kinking or other mechanical damage under normal motion of the moving vehicle parts.",SRP8-046,
+11,11.2.1,Provision of reverse gear,All vehicles must be capable of being operated by the driver from the normal seating position so that they may be propelled both forwards and backwards.,SRP8-032,
+12,12.1,Internal protrusions,"Vehicles must not be equipped with any interior object or fitting which, because it is pointed or has a sharp edge, is likely to increase the risk of bodily injury to any person.",SRP8-032,
+13,12.1,Internal protrusions,"Vehicles must not be equipped with any interior object or fitting which, because it is pointed or has a sharp edge, is likely to increase the risk of bodily injury to any person.",SRP8-027,
+13,12.1,Internal protrusions,"Vehicles must not be equipped with any interior object or fitting which, because it is pointed or has a sharp edge, is likely to increase the risk of bodily injury to any person.",SRP8-036,
+14,12.1,Internal protrusions,"Vehicles must not be equipped with any interior object or fitting which, because it is pointed or has a sharp edge, is likely to increase the risk of bodily injury to any person.",SRP8-034,
+64,13.1,Visual Display Unit,"Any television receiver(s), visual display unit(s) and associated equipment thereof, must be securely mounted in a position which:",SRP8-028,
+65,13.1,Visual Display Unit,"Any television receiver(s), visual display unit(s) and associated equipment thereof, must be securely mounted in a position which:",SRP8-029,
+15,13.1 (a),Visual Display Unit vision,(a) does not obscure the driver’s vision;,SRP8-028,
+16,13.1 (a),Visual Display Unit vision,(a) does not obscure the driver’s vision;,SRP8-029,
+17,13.1 (b),Visual Display Unit movement,(b) does not impede driver or passenger movement in the vehicle; and,SRP8-028,
+18,13.1 (b),Visual Display Unit movement,(b) does not impede driver or passenger movement in the vehicle; and,SRP8-029,
+19,13.1 (c),Visual Display Unit risk,(c) is unlikely to increase the risk of occupant injury.,SRP8-028,
+20,13.1 (c),Visual Display Unit risk,(c) is unlikely to increase the risk of occupant injury.,SRP8-029,
+21,13.2,Visual Display image visibility,"Unless a driver’s aid, any television receiver(s) or visual display unit(s) must be installed such that no part of the image on the screen is visible to the driver from the normal driving position.",SRP8-028,
+22,13.2,Visual Display image visibility,"Unless a driver’s aid, any television receiver(s) or visual display unit(s) must be installed such that no part of the image on the screen is visible to the driver from the normal driving position.",SRP8-029,
+66,14.1.1,Operation of 'Power Operated Window',"Except as provided by clauses 14.1.3 and 14.1.4 below, the operation of ‘Power Operated Window’ systems must only be possible when (NOTE ONLY ONE OF THE SUBSECTIONS from a-f NEED TO BE DONE):",SRP8-175,
+67,14.1.1,Operation of 'Power Operated Window',"Except as provided by clauses 14.1.3 and 14.1.4 below, the operation of ‘Power Operated Window’ systems must only be possible when (NOTE ONLY ONE OF THE SUBSECTIONS from a-f NEED TO BE DONE):",SRP8-112,
+23,14.1.1 a,Control of vehicle engine,"the key that controls activation of the vehicle’s engine is in an “ON”, “START” or “ACCESSORY” position; or",SRP8-112,
+24,14.1.1 b,Ignition switch,the ignition switch has been actuated from “ON” to “OFF” position and/or the key has been removed and no front doors on the vehicle have been opened; or,SRP8-112,
+25,14.1.1 c,Key in door lock,the key to lock the driver’s door is in the door lock; or,SRP8-111,
+26,14.1.1 d,Key locking system,upon activation by a key locking system on the exterior of the vehicle; or,SRP8-111,
+27,14.1.1 e,Remote actuation device,"upon continuous operation of a remote actuation device, provided that the remote actuation device is incapable of opening/closing any ‘Power Operated Window’ from a distance of more than 11 metres from the vehicle; or",SRP8-111,
+28,14.1.1 f,Removal of ignition key and operatkon of Power Operated Window,"when the ignition key has been removed, in which case the ‘Power Operated Window’ system may:
+(i) remain operational for not more than 45 seconds; and
+(ii) if the driver’s window is operated within the 45 second period, the windows can remain operational for an additional period of not more than 45 seconds, after activation of the driver’s window switch; and
+(iii) if the driver’s door is opened within the 45 second period, the power operated window system can remain operational for an additional period of not more than 45 seconds, after the opening of the driver’s door.",SRP8-112,
+29,14.1.2,Type of switches/valves to close windows,"Except as provided by clauses 14.1.3 and 14.1.4 below, only momentary type switches or valves shall be used for operating mechanisms to close any ‘Power Operated Windows’ of doors other than the driver’s door.",SRP8-112,
+30,14.1.3,14.1.1 and 14.1.2 exemption conditions,"The requirements of clauses 14.1.1 and 14.1.2 above shall not apply whenever:
+(a) the closing movement of a ‘Power Operated Window’ starts at an opening not exceeding 4 mm; or
+(b) the closing of a ‘Power Operated Window’ of a vehicle’s door without upper door frame closes from an opening not exceeding 12 mm whenever the pertinent door is closed.",SRP8-112,
+31,14.1.4,"Exemption of 14.1.1, 14.1.2, 14.1.3","A ‘Power Operated Window’ system may also be capable of being closed under any circumstances other than those permitted by clauses 14.1.1 to 14.1.3 above, if:
+(a) while closing, the window reverses direction before exerting a pinch force of 100 N or more within the range of 200 mm to 4 mm beneath the top edge of the power window frame; and
+(b) upon such reversal, the window opens to at least one of the following positions:
+(i) a position that is at least as open as the position at the time closing was initiated; or
+(ii) a position at least 50 mm more open than the position at the time reversing was initiated; or
+(iii) a position that permits a cylindrical rod 200 mm in diameter to be placed through the opening at the top edge of the window.",SRP8-112,
+68,14.1.4.1,Automatic reversal conditions,"To check if a ‘Power Operated Window’ system automatically reverses according to parts (a) and (b) of this clause 14.1.4, a measuring instrument/test rod shall be placed through the window ‘Opening’ such that the cylindrical surface of the rod contacts the structure which forms the boundary of the window. The force/deflection ratio of the measuring instrument/test rod must be at least 10 N/mm. Figure 1 shows some example placements of the cylindrical test rods.",SRP8-112,
+32,15.1,Ventilation,At least half the number of windows must be openable or the vehicle must be provided with an alternative method of ventilation.,SRP8-112,
+33,17.2.1,Wheel Guards Condition,All wheels of category MA vehicles must be provided with ‘Wheel Guards’ that comply with clause 17.2.4 below.,SRP8-050,
+34,17.2.1,Wheel Guards Condition,All wheels of category MA vehicles must be provided with ‘Wheel Guards’ that comply with clause 17.2.4 below.,SRP8-051,
+35,17.2.4.1,Wheel Guards Protection,"The ‘Wheel Guards’ (parts of the bodywork, mudguards, etc.) must be so designed as to protect other road users, as far as practicable, against thrown-up stones, mud, ice, snow and water and to reduce for those users the dangers due to contact with the moving wheels.",SRP8-050,
+36,17.2.4.1,Wheel Guards Protection,"The ‘Wheel Guards’ (parts of the bodywork, mudguards, etc.) must be so designed as to protect other road users, as far as practicable, against thrown-up stones, mud, ice, snow and water and to reduce for those users the dangers due to contact with the moving wheels.",SRP8-051,
+69,17.2.4.2,Wheel Guard Condition,When wheels in straight ahead position:,SRP8-050,
+70,17.2.4.2,Wheel Guard Condition,When wheels in straight ahead position:,SRP8-051,
+37,17.2.4.2 a,Wheel Guard Width,"(a) in the part formed by radial planes at an angle of 30 degrees to the front and 50 degrees to the rear of the centre of the wheel (both measured from the vertical – see Figure 2), the overall width (q) of the ‘Wheel Guards’ must be at least sufficient to cover the ‘Section Width’ (b) of the tyres fitted to the vehicle, taking into account the extremes of tyre/wheel combination as specified by the ‘Manufacturer’;",SRP8-050,
+38,17.2.4.2 a,Wheel Guard Width,"(a) in the part formed by radial planes at an angle of 30 degrees to the front and 50 degrees to the rear of the centre of the wheel (both measured from the vertical – see Figure 2), the overall width (q) of the ‘Wheel Guards’ must be at least sufficient to cover the ‘Section Width’ (b) of the tyres fitted to the vehicle, taking into account the extremes of tyre/wheel combination as specified by the ‘Manufacturer’;",SRP8-051,
+39,17.2.4.2 b,Rear of wheel guard,"the rear of the ‘Wheel Guards’ must not terminate above a horizontal plane 150 mm above the axis of rotation of the wheels (as measured at the wheel centres) and furthermore the intersection of the edge of the ‘Wheel Guard’ with this plane (point A, Figure 2) must lie outside the median longitudinal plane of the tyre; and",SRP8-050,
+40,17.2.4.2 b,Rear of wheel guard,"the rear of the ‘Wheel Guards’ must not terminate above a horizontal plane 150 mm above the axis of rotation of the wheels (as measured at the wheel centres) and furthermore the intersection of the edge of the ‘Wheel Guard’ with this plane (point A, Figure 2) must lie outside the median longitudinal plane of the tyre; and",SRP8-051,
+41,17.2.4.2 c,Contour of wheel guard,"within the part formed by the radial planes referred to in part (a) above, the contour and location of the ‘Wheel Guards’ must satisfy the following requirements:",SRP8-050,
+42,17.2.4.2 c,Contour of wheel guard,"within the part formed by the radial planes referred to in part (a) above, the contour and location of the ‘Wheel Guards’ must satisfy the following requirements:",SRP8-051,
+43,17.2.4.2 c (i),Wheel Guard Projection (p),"the projection - situated in the vertical plane of the tyre axis - of the depth (p) of the outer edge of the ‘Wheel Guards’, measured in the vertical longitudinal plane passing through the centre of the tyre, must be at least 30 mm; and",SRP8-050,
+44,17.2.4.2 c (i),Wheel Guard Projection (p),"the projection - situated in the vertical plane of the tyre axis - of the depth (p) of the outer edge of the ‘Wheel Guards’, measured in the vertical longitudinal plane passing through the centre of the tyre, must be at least 30 mm; and",SRP8-051,
+45,17.2.4.2 c (ii),Wheel Guard distance (c),"the distance (c) between the lower edges of the ‘Wheel Guards’ and the axis passing through the centre of the wheels must not exceed 2r, ‘r’ being the ‘Static Loaded Tyre Radius’ of the tyre.",SRP8-050,
+46,17.2.4.2 c (ii),Wheel Guard distance (c),"the distance (c) between the lower edges of the ‘Wheel Guards’ and the axis passing through the centre of the wheels must not exceed 2r, ‘r’ being the ‘Static Loaded Tyre Radius’ of the tyre.",SRP8-051,
+71,17.2.4.2.1,Depth reduction,The depth (p) referred to in part (c)(i) of this clause 17.2.4.2 may be reduced progressively to zero at the radial planes specified in clause 17.2.4.2(a) above.,SRP8-050,
+72,17.2.4.2.1,Depth reduction,The depth (p) referred to in part (c)(i) of this clause 17.2.4.2 may be reduced progressively to zero at the radial planes specified in clause 17.2.4.2(a) above.,SRP8-051,
+73,17.2.4.3,Adjustable suspension conditions,"In the case of vehicles having adjustable suspension height, the above mentioned requirements must be met when the vehicle is in the normal running position specified by the ‘Manufacturer’.",SRP8-050,
+74,17.2.4.3,Adjustable suspension conditions,"In the case of vehicles having adjustable suspension height, the above mentioned requirements must be met when the vehicle is in the normal running position specified by the ‘Manufacturer’.",SRP8-051,
+47,17.2.6.1,Wheel Guard Visibility,"Except when ‘Rear Marking Plates’ are fitted, for every rear ‘Wheel Guard’ affixed to a motor vehicle, or trailer which is 2.2 metres or more in ‘Overall Width’ and which has a body of the tray type, that portion of the external surface of such ‘Wheel Guard’ which is visible to the rear of such vehicle must be white or silver in colour and clearly visible.",SRP8-050,
+48,17.2.6.1,Wheel Guard Visibility,"Except when ‘Rear Marking Plates’ are fitted, for every rear ‘Wheel Guard’ affixed to a motor vehicle, or trailer which is 2.2 metres or more in ‘Overall Width’ and which has a body of the tray type, that portion of the external surface of such ‘Wheel Guard’ which is visible to the rear of such vehicle must be white or silver in colour and clearly visible.",SRP8-051,
+75,18.1,Retractable Axle Control,A ‘Control’ may be provided to manually move a ‘Retractable Axle’ up or down.,,
+76,18.2,Retractable Axle Control (Manual Conditions),Where a manual ‘Control’ for lowering of a ‘Retractable Axle’ is fitted:,,
+77,18.2 a,Lockable Control,(a) the ‘Control’ or the enclosure in which it is contained must be lockable;,,
+78,18.2 b,Control position,(b) the ‘Control’ must be located within 2.5 metres of the centreline of the ‘Axle Group’ which contains the ‘Retractable Axle’; and,,
+79,18.2 c,Control Accessibility,(c) the ‘Control’ must not be accessible from within the cab of the vehicle.,,
+80,18.3,Retractable Axle Restricted Movement,Any ‘Retractable Axle’ must not be able to be moved from the ‘Fully-down’ position while the load on the ‘Axle Group’ is greater than the ‘Prescribed Transition Mass’.,,
+81,18.4,Axle malfunction,"Any system malfunction, attempted tampering or loss of power (e.g. trailer uncoupling) shall result in any ‘Retractable Axle’ moving to or staying in the ‘Fully-down’ position if the vehicle is loaded.",,
+82,18.5,Audible warning device with Retractable Axle,An audible warning device in accordance with clause 23.3 below must be fitted to each vehicle equipped with a ‘Retractable Axle’.,,
+83,18.6,Retractable Axle marking,The vehicle must be marked on both sides within 2.0 metres of a transverse vertical plane through the centreline of the ‘Retractable Axle’ with “Warning: Axle(s) may raise or lower automatically”. This marking must be in letter height of 25 mm minimum with red coloured letters on a white background and in such a position as to be clearly visible to a person standing nearby.,,
+49,19.2.1,Rims suitability,"All ‘Rims’ normally fitted to the vehicle must be suitable for the vehicle model/type, particularly with respect to their dimensions, speed and load performance characteristics.",SRP8-050,
+50,19.2.1,Rims suitability,"All ‘Rims’ normally fitted to the vehicle must be suitable for the vehicle model/type, particularly with respect to their dimensions, speed and load performance characteristics.",SRP8-051,
+51,19.2.2,MA vehicle rims condition,"For category MA vehicles (passenger cars), the rims fitted must comply with those listed for the tyre size designation in (Clarify ONE of the below):
+ISO 4000-1:2015 (Passenger car tyres and rims Part 1: Tyres (metric series)); or
+the Tyre and Rim Association of Australia Standards Manual – 2018 edition; or
+the European Tyre and Rim Technical Organisation Standards Manual – 2018 edition; or
+the Japan Automobile Tyre Manufacturers Association, Inc. Year Book – 2018 edition; or
+the US Tyre and Rim Association, Inc. Year Book – 2018 edition.",SRP8-050,
+52,19.2.2,MA vehicle rims condition,"For category MA vehicles (passenger cars), the rims fitted must comply with those listed for the tyre size designation in (Clarify ONE of the below):
+ISO 4000-1:2015 (Passenger car tyres and rims Part 1: Tyres (metric series)); or
+the Tyre and Rim Association of Australia Standards Manual – 2018 edition; or
+the European Tyre and Rim Technical Organisation Standards Manual – 2018 edition; or
+the Japan Automobile Tyre Manufacturers Association, Inc. Year Book – 2018 edition; or
+the US Tyre and Rim Association, Inc. Year Book – 2018 edition.",SRP8-051,
+53,20.1,Tyre placard requirements,"Category MA, MB, MC, MD, NA, NB1, TA and TB vehicles, must be fitted with a tyre placard which, includes at least the manufacturer’s recommended:
+tyre size;
+tyre load rating;
+speed rating; and
+cold inflation pressure.",SRP8-050,
+54,20.1,Tyre placard requirements,"Category MA, MB, MC, MD, NA, NB1, TA and TB vehicles, must be fitted with a tyre placard which, includes at least the manufacturer’s recommended:
+tyre size;
+tyre load rating;
+speed rating; and
+cold inflation pressure.",SRP8-051,
+55,21.1,Electrical Wiring Requirements,The wiring of electrical equipment other than the high tension ignition wiring must:,SRP8-055,
+56,21.1 (a),Electrical Wiring Insulation,(a) be insulated at joints;,SRP8-055,
+57,21.1 (b),Electrical Wiring Location,"(b) be located in such a position that it cannot become overheated, cannot contact moving parts, nor constitute a fire hazard owing to its proximity to the fuel system;",SRP8-055,
+58,21.1 (c),Electrical Wiring Chafing,(c) be protected from chafing; and,SRP8-055,
+59,21.1 (d),Electrical Wiring Support,(d) except in the case of any ‘Pole-type Trailer’ which is so constructed that the length of the pole forward of the trailer frame can be adjusted; be supported at intervals of not more than 600 mm.,SRP8-055,
+60,21.1.1,Edge of holes for wiring,"The edge of all holes in metal through which the wiring passes, must be rolled or bushed with a grommet of rubber or other equivalent insulating material.",SRP8-055,
+61,21.7,Connection to power system,"Electrical installations intended for connection to a power system other than that of a drawing vehicle must comply with:
+(a) AS/NZS 3001.2:2022 (Electrical installations — Connectable electrical installations and supply arrangements, Part 2: Connectable electrical installations); or
+(b) AS/NZS 3001:2008 (Electrical installations – Transportable structures and vehicles including their site supplies)..",SRP8-055,
+62,23.1.1,Prohibited audible device(s),"No siren, repeater horn, bell, exhaust whistle or compression whistle, or other device capable of producing a sound resembling that produced by any such siren, repeater horn, bell or whistle, shall be attached to any vehicle other than an emergency community service vehicle.",SRP8-057,
+63,23.2.1,Reversing Alarm (Optional),"Notwithstanding the requirements of clause 23.1 above and the Australian Design Rule 94/… – Audible Warning, a further device may be fitted which when and only when reverse gear is selected emits an intermittent audible signal on a regular time cycle. However, the signal emitted must not be louder than is necessary to warn persons of the proximity of the reversing vehicle.",SRP8-055,
+84,23.3.1,Retractable Axle Alarm (Mandatory if retractable axles are present),c,,
