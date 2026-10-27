@@ -10,7 +10,8 @@ from pathlib import Path
 
 from neo4j import READ_ACCESS, GraphDatabase, unit_of_work
 
-REPO = Path(__file__).resolve().parent.parent
+BACKEND = Path(__file__).resolve().parent.parent
+REPO = BACKEND.parent
 
 DETAIL_LIMIT = 240
 LIST_LIMIT = 50

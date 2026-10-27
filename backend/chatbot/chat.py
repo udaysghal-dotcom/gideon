@@ -2,12 +2,18 @@
 
 import asyncio
 import sys
+from pathlib import Path
 
 import ollama
 
 from chatbot.agent import ChatSession
-from design.racecar import Racecar
-from design.logo import Logo
+
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from frontend.utils.racecar import Racecar
+from frontend.utils.logo import Logo
 
 COMMANDS = (
     "/reset, /model <name>, /debug, /context, /processor, "
@@ -120,9 +126,7 @@ async def chat_loop(session):
                 print(await session.processor())
                 continue
             if command in {"process", "process-show", "process-hide"}:
-                if command == "process":
-                    show_process = not show_process
-                else:
+                if command != "process":
                     show_process = command == "process-show"
                 print(process_mode(show_process))
                 continue

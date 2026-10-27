@@ -16,7 +16,7 @@ from mcp import Client
 from mcp.client.stdio import StdioServerParameters
 from ollama import AsyncClient, Message, ResponseError
 
-from chatbot.graph import REPO, load_env
+from chatbot.graph import BACKEND, REPO, load_env
 
 DEFAULT_MODEL = "gemma4:12b"
 DEFAULT_NUM_CTX = 16384
@@ -189,7 +189,7 @@ class ChatSession:
             server = StdioServerParameters(
                 command=sys.executable,
                 args=["-m", "chatbot.mcp_server"],
-                cwd=str(REPO),
+                cwd=str(BACKEND),
             )
             self._mcp = await self._stack.enter_async_context(Client(server))
             listed = await self._mcp.list_tools()
