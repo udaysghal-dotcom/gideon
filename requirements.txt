@@ -1,0 +1,5 @@
+neo4j
+mcp>=2.2,<3
+ollama
+openpyxl
+pytest
