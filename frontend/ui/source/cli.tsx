@@ -4,7 +4,7 @@ import {render} from 'ink';
 import meow from 'meow';
 import App from './app.js';
 
-const cli = meow(
+meow(
 	`
 	Usage
 	  $ ui
@@ -26,4 +26,4 @@ const cli = meow(
 	},
 );
 
-render(<App name={cli.flags.name} />);
+render(<App />);

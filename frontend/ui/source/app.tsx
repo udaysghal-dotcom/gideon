@@ -1,14 +1,19 @@
-import React from 'react';
-import {Text} from 'ink';
+import React, {useState} from 'react';
+import {Box, Text} from 'ink';
+import PromptInput from './prompt-input.js';
 
-type Props = {
-	name: string | undefined;
-};
+export default function App() {
+	const [messages, setMessages] = useState<string[]>([]);
 
-export default function App({name = 'Stranger'}: Props) {
 	return (
-		<Text>
-			Hello, <Text color="green">{name}</Text>
-		</Text>
+		<Box flexDirection="column">
+			{messages.map((message, i) => (
+				<Text key={i}>
+					<Text color="cyan">{'> '}</Text>
+					{message}
+				</Text>
+			))}
+			<PromptInput onSubmit={message => setMessages(m => [...m, message])} />
+		</Box>
 	);
 }
