@@ -1,13 +1,11 @@
-import React, {useEffect, useState} from 'react';
-import {Box, Text, useInput, useStdout} from 'ink';
+import React, {useState} from 'react';
+import {Box, Text, useInput} from 'ink';
 import {matchCommands, type Command} from './commands.js';
 import {isTerminalReport, useMouse} from './use-mouse.js';
+import {useScreenSize} from './use-screen-size.js';
 
 type Props = {
 	onSubmit: (value: string) => void;
-	// Called with how many rows the command menu covers above the input, so the
-	// screen can keep at least that many rows for it to draw over.
-	onMenuHeight?: (rows: number) => void;
 	placeholder?: string;
 };
 
@@ -16,10 +14,9 @@ const inputHeight = 3;
 
 export default function PromptInput({
 	onSubmit,
-	onMenuHeight,
 	placeholder = 'Ask Gideon...',
 }: Props) {
-	const {stdout} = useStdout();
+	const {rows, columns: width} = useScreenSize();
 	const [value, setValue] = useState('');
 	const [cursor, setCursor] = useState(0);
 	const [selected, setSelected] = useState(0);
@@ -28,10 +25,6 @@ export default function PromptInput({
 	const highlighted = matches[Math.min(selected, matches.length - 1)];
 	// One blank row on top separates the menu from the text it covers.
 	const menuHeight = matches.length > 0 ? matches.length + 1 : 0;
-
-	useEffect(() => {
-		onMenuHeight?.(menuHeight);
-	}, [menuHeight, onMenuHeight]);
 
 	const edit = (next: string, nextCursor: number) => {
 		setValue(next);
@@ -51,13 +44,16 @@ export default function PromptInput({
 		edit('', 0);
 	};
 
-	const bottomRow = useMouse(matches.length > 0, event => {
-		if (bottomRow === 0) {
+	// Only on while the menu is open, so text can be selected the rest of the time.
+	useMouse(matches.length > 0, event => {
+		// A wheel turn would otherwise read as a click on the row under it.
+		if (event.wheel) {
 			return;
 		}
 
-		// The last command sits on the row just above the input box.
-		const firstRow = bottomRow - inputHeight - matches.length + 1;
+		// The app fills the screen but the last row, and the input box sits at
+		// the bottom of it. The last command is on the row just above the box.
+		const firstRow = rows - 1 - inputHeight - matches.length + 1;
 		const command = matches[event.row - firstRow];
 		if (!command) {
 			return;
@@ -137,13 +133,12 @@ export default function PromptInput({
 	const before = value.slice(0, cursor);
 	const atCursor = value[cursor] ?? ' ';
 	const after = value.slice(cursor + 1);
-	const width = stdout.columns || 80;
 	const nameWidth = Math.max(
 		...matches.map(c => c.name.length + (c.args ? c.args.length + 1 : 0)),
 	);
 
 	return (
-		<Box flexDirection="column">
+		<Box flexDirection="column" flexShrink={0}>
 			{matches.length > 0 ? (
 				// Drawn after the messages and lifted over them, so it covers them
 				// instead of pushing them up. Every row is written out to the full
@@ -175,7 +170,7 @@ export default function PromptInput({
 				</Box>
 			) : null}
 			<Box borderStyle="round" borderColor="gray" paddingX={1}>
-				<Text color="yellow">{'> '}</Text>
+				<Text color="yellow">{'❯ '}</Text>
 				{value.length === 0 ? (
 					<>
 						<Text inverse> </Text>

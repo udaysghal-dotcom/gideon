@@ -26,4 +26,11 @@ meow(
 	},
 );
 
+// Draw on the terminal's alternate screen, like vim does, so Gideon fills the
+// window and the shell comes back as it was on exit.
+process.stdout.write('\u001B[?1049h\u001B[H');
+process.on('exit', () => {
+	process.stdout.write('\u001B[?1049l');
+});
+
 render(<App />);
