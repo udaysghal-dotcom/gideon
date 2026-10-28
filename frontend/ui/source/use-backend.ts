@@ -1,0 +1,109 @@
+import {spawn, type ChildProcess} from 'node:child_process';
+import {createInterface} from 'node:readline';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {useCallback, useEffect, useRef, useState} from 'react';
+
+export type Message = {
+	role: 'user' | 'assistant' | 'lookup' | 'error';
+	text: string;
+};
+
+type BackendEvent =
+	| {type: 'ready'; model: string; num_ctx: number}
+	| {type: 'thinking'; text: string}
+	| {type: 'lookup'; text: string}
+	| {type: 'answer'; text: string}
+	| {type: 'error'; text: string}
+	| {type: 'done'};
+
+const here = path.dirname(fileURLToPath(import.meta.url));
+const backendDir = path.resolve(here, '../../../backend');
+const python = path.join(backendDir, '.venv/bin/python');
+
+export function useBackend() {
+	const [messages, setMessages] = useState<Message[]>([]);
+	const [ready, setReady] = useState(false);
+	const [busy, setBusy] = useState(false);
+	const [model, setModel] = useState('');
+	const child = useRef<ChildProcess>();
+
+	useEffect(() => {
+		const proc = spawn(python, ['-m', 'chatbot.bridge'], {
+			cwd: backendDir,
+			stdio: ['pipe', 'pipe', 'pipe'],
+		});
+		child.current = proc;
+
+		const add = (message: Message) => {
+			setMessages(m => [...m, message]);
+		};
+
+		let stderr = '';
+		proc.stderr!.on('data', (chunk: Buffer) => {
+			stderr = (stderr + chunk.toString()).slice(-2000);
+		});
+
+		proc.on('error', error => {
+			add({role: 'error', text: `Could not start the backend: ${error.message}`});
+		});
+
+		proc.on('exit', code => {
+			setReady(false);
+			setBusy(false);
+			if (code) {
+				add({
+					role: 'error',
+					text: `Backend exited (code ${code}).\n${stderr.trim()}`,
+				});
+			}
+		});
+
+		createInterface({input: proc.stdout!}).on('line', line => {
+			let event: BackendEvent;
+			try {
+				event = JSON.parse(line) as BackendEvent;
+			} catch {
+				return;
+			}
+
+			switch (event.type) {
+				case 'ready':
+					setModel(event.model);
+					setReady(true);
+					break;
+				case 'lookup':
+					add({role: 'lookup', text: event.text});
+					break;
+				case 'answer':
+					add({role: 'assistant', text: event.text});
+					break;
+				case 'error':
+					add({role: 'error', text: event.text});
+					break;
+				case 'done':
+					setBusy(false);
+					break;
+				default:
+					break;
+			}
+		});
+
+		return () => {
+			proc.kill();
+		};
+	}, []);
+
+	const send = useCallback((text: string) => {
+		const proc = child.current;
+		if (!proc?.stdin?.writable) {
+			return;
+		}
+
+		setMessages(m => [...m, {role: 'user', text}]);
+		setBusy(true);
+		proc.stdin.write(JSON.stringify({type: 'ask', text}) + '\n');
+	}, []);
+
+	return {messages, ready, busy, model, send};
+}

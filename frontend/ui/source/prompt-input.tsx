@@ -59,7 +59,7 @@ export default function PromptInput({
 
 	return (
 		<Box borderStyle="round" borderColor="gray" paddingX={1}>
-			<Text color="cyan">{'> '}</Text>
+			<Text color="yellow">{'> '}</Text>
 			{value.length === 0 ? (
 				<>
 					<Text inverse> </Text>
