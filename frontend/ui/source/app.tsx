@@ -11,11 +11,27 @@ import stringWidth from 'string-width';
 import wrapAnsi from 'wrap-ansi';
 import Header from './header.js';
 import PromptInput from './prompt-input.js';
+import Racecar from './racecar.js';
 import {splitCommand} from './commands.js';
 import {useBackend, type Message} from './use-backend.js';
 import {useScreenSize} from './use-screen-size.js';
 
 const questionBackground = '#3a3a3a';
+// Messages about how the model is working, hidden by /process-hide.
+const processRoles = new Set<Message['role']>(['thinking', 'lookup']);
+// Commands handled here without asking the backend.
+const localCommands = new Set([
+	'quit',
+	'process',
+	'process-show',
+	'process-hide',
+]);
+
+function processMode(show: boolean) {
+	return show
+		? 'Thinking is shown. Thinking and lookups will appear while the model works.'
+		: 'Thinking is hidden. A racecar will drive while the model works.';
+}
 
 // The question is wrapped and padded by hand so the grey band runs to the
 // right edge on every row, not just behind the letters.
@@ -42,6 +58,8 @@ function Line({message, width}: {message: Message; width: number}) {
 	switch (message.role) {
 		case 'user':
 			return <Question text={message.text} width={width} />;
+		case 'thinking':
+			return <Text dimColor>{`thinking: ${message.text.trim()}`}</Text>;
 		case 'lookup':
 		case 'info':
 			return <Text dimColor>{message.text}</Text>;
@@ -54,7 +72,8 @@ function Line({message, width}: {message: Message; width: number}) {
 
 export default function App() {
 	const {exit} = useApp();
-	const {messages, ready, busy, model, send, request, note} = useBackend();
+	const {messages, ready, busy, asking, model, send, request, note} =
+		useBackend();
 	const {rows, columns} = useScreenSize();
 	const viewport = useRef<DOMElement>(null);
 	const content = useRef<DOMElement>(null);
@@ -63,6 +82,8 @@ export default function App() {
 	const [overflow, setOverflow] = useState(0);
 	// How far the user has scrolled up from the newest line.
 	const [scroll, setScroll] = useState(0);
+	// Whether the model's thinking and lookups are shown while it works.
+	const [showProcess, setShowProcess] = useState(true);
 
 	// Measured after every render, since new messages or a resize change it.
 	useEffect(() => {
@@ -91,6 +112,12 @@ export default function App() {
 		}
 	});
 
+	// Thinking and lookups are kept while hidden, so showing them again brings
+	// back the earlier ones too.
+	const shown = showProcess
+		? messages
+		: messages.filter(m => !processRoles.has(m.role));
+
 	let status = 'Ask Gideon... (/ for commands)';
 	if (!ready) {
 		status = 'Starting backend...';
@@ -101,6 +128,17 @@ export default function App() {
 	const runCommand = (text: string) => {
 		const {name, rest} = splitCommand(text);
 		switch (name) {
+			case 'process':
+				note(processMode(showProcess));
+				return;
+			case 'process-show':
+			case 'process-hide': {
+				const show = name === 'process-show';
+				setShowProcess(show);
+				note(processMode(show));
+				return;
+			}
+
 			case 'quit':
 				exit();
 				return;
@@ -112,6 +150,9 @@ export default function App() {
 				return;
 			case 'context':
 				request({type: 'context'});
+				return;
+			case 'processor':
+				request({type: 'processor'});
 				return;
 			default:
 				note(`Unknown command: /${name}. Type / to see the list.`);
@@ -139,9 +180,11 @@ export default function App() {
 					marginTop={-(overflow - scroll)}
 				>
 					<Header model={model} />
-					{messages.map((message, i) => (
+					{shown.map((message, i) => (
 						<Line key={i} message={message} width={columns} />
 					))}
+					{/* Stands in for the hidden thinking until the answer comes. */}
+					{asking && !showProcess ? <Racecar width={columns} /> : null}
 				</Box>
 			</Box>
 			<PromptInput
@@ -149,9 +192,10 @@ export default function App() {
 				onSubmit={text => {
 					setScroll(0);
 					if (text.startsWith('/')) {
-						// Quit works even while the backend is busy.
+						// Commands that do not need the backend work even while it is
+						// busy, so thinking can be hidden or shown mid answer.
 						const {name} = splitCommand(text);
-						if (name === 'quit' || (ready && !busy)) {
+						if (localCommands.has(name) || (ready && !busy)) {
 							runCommand(text);
 						}
 

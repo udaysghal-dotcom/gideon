@@ -5,7 +5,7 @@ import path from 'node:path';
 import {useCallback, useEffect, useRef, useState} from 'react';
 
 export type Message = {
-	role: 'user' | 'assistant' | 'lookup' | 'info' | 'error';
+	role: 'user' | 'assistant' | 'thinking' | 'lookup' | 'info' | 'error';
 	text: string;
 };
 
@@ -22,7 +22,8 @@ type BackendEvent =
 export type BackendRequest =
 	| {type: 'reset'}
 	| {type: 'model'; name: string}
-	| {type: 'context'};
+	| {type: 'context'}
+	| {type: 'processor'};
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const backendDir = path.resolve(here, '../../../backend');
@@ -32,6 +33,8 @@ export function useBackend() {
 	const [messages, setMessages] = useState<Message[]>([]);
 	const [ready, setReady] = useState(false);
 	const [busy, setBusy] = useState(false);
+	// Busy answering a question, rather than with a command like /reset.
+	const [asking, setAsking] = useState(false);
 	const [model, setModel] = useState('');
 	const child = useRef<ChildProcess>();
 
@@ -52,12 +55,16 @@ export function useBackend() {
 		});
 
 		proc.on('error', error => {
-			add({role: 'error', text: `Could not start the backend: ${error.message}`});
+			add({
+				role: 'error',
+				text: `Could not start the backend: ${error.message}`,
+			});
 		});
 
 		proc.on('exit', code => {
 			setReady(false);
 			setBusy(false);
+			setAsking(false);
 			if (code) {
 				add({
 					role: 'error',
@@ -79,6 +86,18 @@ export function useBackend() {
 					setModel(event.model);
 					setReady(true);
 					break;
+				case 'thinking':
+					// Thinking streams in small pieces, so they are joined into one
+					// message until something else is said.
+					setMessages(m => {
+						const last = m[m.length - 1];
+						if (last?.role !== 'thinking') {
+							return [...m, {role: 'thinking', text: event.text}];
+						}
+
+						return [...m.slice(0, -1), {...last, text: last.text + event.text}];
+					});
+					break;
 				case 'lookup':
 					add({role: 'lookup', text: event.text});
 					break;
@@ -96,6 +115,7 @@ export function useBackend() {
 					break;
 				case 'done':
 					setBusy(false);
+					setAsking(false);
 					break;
 				default:
 					break;
@@ -121,6 +141,7 @@ export function useBackend() {
 	const send = useCallback(
 		(text: string) => {
 			if (write({type: 'ask', text})) {
+				setAsking(true);
 				setMessages(m => [...m, {role: 'user', text}]);
 			}
 		},
@@ -138,5 +159,5 @@ export function useBackend() {
 		setMessages(m => [...m, {role: 'info', text}]);
 	}, []);
 
-	return {messages, ready, busy, model, send, request, note};
+	return {messages, ready, busy, asking, model, send, request, note};
 }
