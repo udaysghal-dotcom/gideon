@@ -5,7 +5,7 @@ import path from 'node:path';
 import {useCallback, useEffect, useRef, useState} from 'react';
 
 export type Message = {
-	role: 'user' | 'assistant' | 'lookup' | 'error';
+	role: 'user' | 'assistant' | 'lookup' | 'info' | 'error';
 	text: string;
 };
 
@@ -14,8 +14,15 @@ type BackendEvent =
 	| {type: 'thinking'; text: string}
 	| {type: 'lookup'; text: string}
 	| {type: 'answer'; text: string}
+	| {type: 'info'; text: string}
+	| {type: 'model'; model: string}
 	| {type: 'error'; text: string}
 	| {type: 'done'};
+
+export type BackendRequest =
+	| {type: 'reset'}
+	| {type: 'model'; name: string}
+	| {type: 'context'};
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const backendDir = path.resolve(here, '../../../backend');
@@ -78,6 +85,12 @@ export function useBackend() {
 				case 'answer':
 					add({role: 'assistant', text: event.text});
 					break;
+				case 'info':
+					add({role: 'info', text: event.text});
+					break;
+				case 'model':
+					setModel(event.model);
+					break;
 				case 'error':
 					add({role: 'error', text: event.text});
 					break;
@@ -94,16 +107,36 @@ export function useBackend() {
 		};
 	}, []);
 
-	const send = useCallback((text: string) => {
+	const write = useCallback((payload: object) => {
 		const proc = child.current;
 		if (!proc?.stdin?.writable) {
-			return;
+			return false;
 		}
 
-		setMessages(m => [...m, {role: 'user', text}]);
 		setBusy(true);
-		proc.stdin.write(JSON.stringify({type: 'ask', text}) + '\n');
+		proc.stdin.write(JSON.stringify(payload) + '\n');
+		return true;
 	}, []);
 
-	return {messages, ready, busy, model, send};
+	const send = useCallback(
+		(text: string) => {
+			if (write({type: 'ask', text})) {
+				setMessages(m => [...m, {role: 'user', text}]);
+			}
+		},
+		[write],
+	);
+
+	const request = useCallback(
+		(payload: BackendRequest) => {
+			write(payload);
+		},
+		[write],
+	);
+
+	const note = useCallback((text: string) => {
+		setMessages(m => [...m, {role: 'info', text}]);
+	}, []);
+
+	return {messages, ready, busy, model, send, request, note};
 }
