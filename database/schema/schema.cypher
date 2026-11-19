@@ -2,7 +2,7 @@
 //
 // Nodes
 //   (:Project     {id, name})                         
-//   (:Department  {name})                             primary/secondary departments
+//   (:Department  {name})
 //   (:ADR         {code, number, name})               
 //   (:Requirement {id, adr, clause, name, details})
 //
@@ -14,8 +14,7 @@
 //
 // Requirement.id is "<ADR code>|<clause>|<req name>|<sha1(details)[:8]>" so the
 // same requirement repeated across checklist rows (one per project) maps to a
-// single node. VERIFIED_BY.method is stored as written: 'N/A' means deliberately
-// not verified, a missing method means not decided yet.
+// single node. 
 
 DROP CONSTRAINT Project_ID_project_adr_map_key IF EXISTS;
 
